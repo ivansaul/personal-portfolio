@@ -5,7 +5,12 @@ email = "saul@example.com"
 phone = "+1 (213) 352-2795"
 birthday = "June 26, 1996"
 location = "Sacramento, California, USA"
-avatar = "./assets/images/my-avatar.png"
+avatar = "./config/assets/avatars/my-avatar.png"
+presentation = """
+I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+
+My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+"""
 
 # https://ionic.io/ionicons
 [social]
@@ -14,9 +19,28 @@ twitter = "https://twitter.com/"
 instagram = "https://instagram.com/"
 github = "https://github.com/ivansaul"
 
-[about]
-presentation = """
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
-"""
+[testimonial]
+[testimonial.1]
+name = "Daniel lewis"
+avatar = "./config/assets/avatars/avatar-1.png"
+datetime = "2022-02-23"
+text = "Daniel Lewis is a highly skilled professional in the field of corporate identity creation. We were extremely satisfied with the work he delivered. He brings extensive experience and a strong commitment to meeting client needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+[testimonial.2]
+name = "Jessica miller"
+avatar = "./config/assets/avatars/avatar-2.png"
+datetime = "2022-03-15"
+text = "Jessica Miller was hired to develop our corporate identity, and we couldn't be happier with the results. Her expertise and attention to detail are exceptional. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+[testimonial.3]
+name = "Emily evans"
+avatar = "./config/assets/avatars/avatar-3.png"
+datetime = "2022-04-02"
+text = "Emily Evans is a talented professional who created our corporate identity. We were impressed with her skills and dedication to meeting client needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+[testimonial.4]
+name = "Henry william"
+avatar = "./config/assets/avatars/avatar-4.png"
+datetime = "2022-05-18"
+text = "Henry William was responsible for developing our corporate identity, and we couldn't be more satisfied with his work. He has extensive experience and a strong focus on understanding client requirements. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

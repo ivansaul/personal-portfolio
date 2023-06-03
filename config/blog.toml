@@ -1,0 +1,47 @@
+[post1]
+category = "Design"
+title = "Design conferences in 2022"
+subtitle = "Veritatis et quasi architecto beatae vitae dicta sunt, explicabo."
+datetime = "2022-02-23"
+image = "./config/assets/posts/blog-1.jpg"
+url = "https://github.com/ivansaul/flutter_cinemapedia_app#screens"
+
+[post2]
+category = "Design"
+title = "Best fonts every designer"
+subtitle = "Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi"
+datetime = "2022-02-23"
+image = "./config/assets/posts/blog-2.jpg"
+url = "https://github.com/ivansaul/flutter_cinemapedia_app#screens"
+
+[post3]
+category = "Design"
+title = "Design digest #80"
+subtitle = "Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit"
+datetime = "2022-02-23"
+image = "./config/assets/posts/blog-3.jpg"
+url = "https://github.com/ivansaul/flutter_cinemapedia_app#screens"
+
+[post4]
+category = "Design"
+title = "UI interactions of the week"
+subtitle = "Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi"
+datetime = "2022-02-23"
+image = "./config/assets/posts/blog-4.jpg"
+url = "https://github.com/ivansaul/flutter_cinemapedia_app#screens"
+
+[post5]
+category = "Design"
+title = "The Forgotten Art Of Spacing"
+subtitle = "Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+datetime = "2022-02-23"
+image = "./config/assets/posts/blog-5.jpg"
+url = "https://github.com/ivansaul/flutter_cinemapedia_app#screens"
+
+[post6]
+category = "Design"
+title = "Design Digest #79"
+subtitle = "Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum"
+datetime = "2022-02-23"
+image = "./config/assets/posts/blog-6.jpg"
+url = "https://github.com/ivansaul/flutter_cinemapedia_app#screens"

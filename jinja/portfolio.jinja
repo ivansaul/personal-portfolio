@@ -54,14 +54,14 @@
       {% for project in projects.values() %}
 
       <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
-        <a href="#">
+        <a href="{{project.url}}" target="_blank">
 
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
             </div>
 
-            <img src="{{project.src}}" alt="finance" loading="lazy">
+            <img src="{{project.image}}" alt="finance" loading="lazy">
           </figure>
 
           <h3 class="project-title">{{project.title}}</h3>
