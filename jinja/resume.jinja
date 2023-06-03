@@ -1,0 +1,100 @@
+<!-- resume.jinja -->
+<article class="resume" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      {% for education in resume.education.values() | reverse %}
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">{{education.title}}</h4>
+
+        <span>{{education.timeline}}</span>
+
+        <p class="timeline-text">
+          {{education.description}}
+        </p>
+
+      </li>
+
+      {% endfor %}
+
+    </ol>
+
+  </section>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      {% for experience in resume.experience.values() | reverse %}
+      
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">{{experience.title}}</h4>
+
+        <span>{{experience.timeline}}</span>
+
+        <p class="timeline-text">
+          {{experience.description}}
+        </p>
+
+      </li>
+
+      {% endfor %}
+
+    </ol>
+
+  </section>
+
+  <section class="skill">
+
+    <h3 class="h3 skills-title">My skills</h3>
+
+    <ul class="skills-list content-card">
+
+      {% for skill in resume.skill.values() %}
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">{{skill.title}}</h5>
+          <data value="{{skill.value[:-1]}}">{{skill.value}}</data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: {{skill.value}};"></div>
+        </div>
+
+      </li>
+
+      {% endfor %}
+
+
+    </ul>
+
+  </section>
+
+</article>

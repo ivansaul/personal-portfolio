@@ -1,0 +1,45 @@
+[project1]
+title = "Finance"
+category = "Web development"
+src = "./assets/images/project-1.jpg"
+# src = "https://i.imgur.com/B1jgX0G.png"
+
+[project2]
+title = "Orizon"
+category = "Web development"
+src = "./assets/images/project-2.png"
+
+[project3]
+title = "Fundo"
+category = "Web design"
+src = "./assets/images/project-3.jpg"
+
+[project4]
+title = "Brawlhalla"
+category = "Applications"
+src = "./assets/images/project-4.png"
+
+[project5]
+title = "DSM."
+category = "Web design"
+src = "./assets/images/project-5.png"
+
+[project6]
+title = "MetaSpark"
+category = "Web design"
+src = "./assets/images/project-6.png"
+
+[project7]
+title = "Summary"
+category = "Web development"
+src = "./assets/images/project-7.png"
+
+[project8]
+title = "Task Manager"
+category = "Applications"
+src = "./assets/images/project-8.jpg"
+
+[project9]
+title = "Arrival"
+category = "Web development"
+src = "./assets/images/project-9.png"

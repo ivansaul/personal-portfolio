@@ -1,0 +1,104 @@
+<!-- sidebar.jinja -->
+<aside class="sidebar" data-sidebar>
+
+  <div class="sidebar-info">
+
+    <figure class="avatar-box">
+      <img src="{{about.my.avatar}}" alt="{{about.my.name}}" width="80">
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="{{about.my.name}}">{{about.my.name}}</h1>
+
+      <p class="title">{{about.my.rol}}</p>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+
+  </div>
+
+  <div class="sidebar-info_more">
+
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+
+          <a href="{{about.my.email}}" class="contact-link">{{about.my.email}}</a>
+        </div>
+
+      </li>
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Phone</p>
+
+          <a href="tel:{{about.my.phone}}" class="contact-link">{{about.my.phone}}</a>
+        </div>
+
+      </li>
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Birthday</p>
+
+          <time datetime="{{about.my.birthday}}">{{about.my.birthday}}</time>
+        </div>
+
+      </li>
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Location</p>
+
+          <address>{{about.my.location}}</address>
+        </div>
+
+      </li>
+
+    </ul>
+
+    <div class="separator"></div>
+
+    <ul class="social-list">
+
+      {% for red, url in about.social.items() %}
+      <li class="social-item">
+        <a href="{{url}}" class="social-link" , target="_blank">
+          <ion-icon name="logo-{{red}}"></ion-icon>
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+  </div>
+
+</aside>

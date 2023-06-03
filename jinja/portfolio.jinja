@@ -1,0 +1,80 @@
+<!-- portfolio.jinja -->
+<article class="portfolio" data-page="portfolio">
+
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+
+    <ul class="filter-list">
+
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+
+      {% for category in categories %}
+      <li class="filter-item">
+        <button data-filter-btn>{{category}}</button>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+    <div class="filter-select-box">
+
+      <button class="filter-select" data-select>
+
+        <div class="select-value" data-selecct-value>Select category</div>
+
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+
+      </button>
+
+      <ul class="select-list">
+
+        <li class="select-item">
+          <button data-select-item>All</button>
+        </li>
+
+        {% for category in categories %}
+        <li class="select-item">
+          <button data-select-item>{{category}}</button>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+
+    <ul class="project-list">
+
+      {% for project in projects.values() %}
+
+      <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
+        <a href="#">
+
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+
+            <img src="{{project.src}}" alt="finance" loading="lazy">
+          </figure>
+
+          <h3 class="project-title">{{project.title}}</h3>
+
+          <p class="project-category">{{project.category}}</p>
+
+        </a>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+</article>
