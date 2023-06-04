@@ -10,6 +10,7 @@ class Portfolio:
         self.projects_toml = "config/projects.toml"
         self.resume_toml = "config/resume.toml"
         self.blog_toml = "config/blog.toml"
+        self.navbar_toml = "config/navbar.toml"
 
 
 

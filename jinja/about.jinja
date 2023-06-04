@@ -102,23 +102,23 @@
 
   <section class="testimonials">
 
-    <h3 class="h3 testimonials-title">Testimonials</h3>
+    <h3 class="h3 testimonials-title">Competencies</h3>
 
     <ul class="testimonials-list has-scrollbar">
-      {% for testimonial in about.testimonial.values() %}
+      {% for competencie in about.competencies.values() %}
 
       <li class="testimonials-item">
         <div class="content-card" data-testimonials-item>
 
           <figure class="testimonials-avatar-box">
-            <img src="{{testimonial.avatar}}" alt="{{testimonial.name}}" width="60" data-testimonials-avatar>
+            <img src="{{competencie.icon}}" alt="{{competencie.title}}" width="60" data-testimonials-avatar>
           </figure>
 
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>{{testimonial.name}}</h4>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>{{competencie.title}}</h4>
 
           <div class="testimonials-text" data-testimonials-text>
             <p>
-              {{testimonial.text}}
+              {{competencie.text}}
             </p>
           </div>
 
@@ -158,7 +158,7 @@
 
         <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-        <time datetime="2021-06-14">14 June, 2021</time>
+        {# <time datetime="2021-06-14">14 June, 2021</time> #}
 
         <div data-modal-text>
           <p>
@@ -183,45 +183,18 @@
 
   <section class="clients">
 
-    <h3 class="h3 clients-title">Clients</h3>
+    <h3 class="h3 clients-title">Technologies Experience</h3>
 
     <ul class="clients-list has-scrollbar">
-
+      {% for icon in about.technologies.values() %}
+      
       <li class="clients-item">
         <a href="#">
-          <img src="./assets/images/logo-1-color.png" alt="client logo">
+          <img src="{{icon}}" alt="client logo" width="50" height="50">
         </a>
       </li>
 
-      <li class="clients-item">
-        <a href="#">
-          <img src="./assets/images/logo-2-color.png" alt="client logo">
-        </a>
-      </li>
-
-      <li class="clients-item">
-        <a href="#">
-          <img src="./assets/images/logo-3-color.png" alt="client logo">
-        </a>
-      </li>
-
-      <li class="clients-item">
-        <a href="#">
-          <img src="./assets/images/logo-4-color.png" alt="client logo">
-        </a>
-      </li>
-
-      <li class="clients-item">
-        <a href="#">
-          <img src="./assets/images/logo-5-color.png" alt="client logo">
-        </a>
-      </li>
-
-      <li class="clients-item">
-        <a href="#">
-          <img src="./assets/images/logo-6-color.png" alt="client logo">
-        </a>
-      </li>
+      {% endfor %}
 
     </ul>
 
