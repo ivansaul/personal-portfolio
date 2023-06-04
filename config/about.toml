@@ -21,26 +21,31 @@ github = "https://github.com/ivansaul"
 
 
 [testimonial]
+
 [testimonial.1]
-name = "Daniel lewis"
+name = "Daniel Lewis"
 avatar = "./config/assets/avatars/avatar-1.png"
-datetime = "2022-02-23"
-text = "Daniel Lewis is a highly skilled professional in the field of corporate identity creation. We were extremely satisfied with the work he delivered. He brings extensive experience and a strong commitment to meeting client needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+text = "Ivan Saul's programming skills are truly impressive. His ability to write clean and efficient code has significantly improved our software projects. Ivan's problem-solving skills and attention to detail have made him an invaluable asset to our team. We highly recommend Ivan for any programming project. He is a talented and dedicated professional."
 
 [testimonial.2]
-name = "Jessica miller"
+name = "Jessica Miller"
 avatar = "./config/assets/avatars/avatar-2.png"
-datetime = "2022-03-15"
-text = "Jessica Miller was hired to develop our corporate identity, and we couldn't be happier with the results. Her expertise and attention to detail are exceptional. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+text = "Ivan Saul is an exceptional programmer with a strong passion for coding. His expertise in various programming languages and frameworks is remarkable. Ivan's ability to translate complex requirements into elegant solutions is unmatched. Working with Ivan has been a pleasure, and his contributions have greatly impacted the success of our projects."
 
 [testimonial.3]
-name = "Emily evans"
+name = "Emily Evans"
 avatar = "./config/assets/avatars/avatar-3.png"
-datetime = "2022-04-02"
-text = "Emily Evans is a talented professional who created our corporate identity. We were impressed with her skills and dedication to meeting client needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+text = "Ivan Saul is a highly skilled and innovative programmer. His ability to think outside the box and find creative solutions to complex problems is remarkable. Ivan's attention to detail and commitment to delivering high-quality code have made him an invaluable member of our development team. We are grateful for his contributions and expertise."
 
 [testimonial.4]
-name = "Henry william"
+name = "Henry William"
 avatar = "./config/assets/avatars/avatar-4.png"
-datetime = "2022-05-18"
-text = "Henry William was responsible for developing our corporate identity, and we couldn't be more satisfied with his work. He has extensive experience and a strong focus on understanding client requirements. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+text = "Ivan Saul's programming expertise is exceptional. His deep understanding of software development principles and best practices has been instrumental in the success of our projects. Ivan's dedication to writing clean, maintainable, and scalable code sets him apart. We highly recommend Ivan for any programming task; he consistently delivers outstanding results."
+
+
+# Technology I have woirked with
+[technologies]
+python = "./config/assets/icons/python.svg"
+firebase = "./config/assets/icons/firebase.svg"
+flutter = "./config/assets/icons/flutter.svg"
+dart = "./config/assets/icons/dart.svg"
