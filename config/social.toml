@@ -1,0 +1,8 @@
+# https://ionic.io/ionicons
+# <ion-icon name="logo-[[name]]"></ion-icon>
+# name = "https://example.com/"
+
+facebook = "https://facebook.com/"
+twitter = "https://twitter.com/"
+instagram = "https://instagram.com/"
+github = "https://github.com/ivansaul"

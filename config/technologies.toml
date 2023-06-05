@@ -1,0 +1,15 @@
+# Technology I have worked with
+# name = "./.../../icon_path"
+
+python = "./config/assets/icons/python.svg"
+flutter = "./config/assets/icons/flutter.svg"
+git = "./config/assets/icons/git.svg"
+figma = "./config/assets/icons/figma.svg"
+firebase = "./config/assets/icons/firebase.svg"
+pandas = "./config/assets/icons/pandas.svg"
+mongodb = "./config/assets/icons/mongodb.svg"
+dart = "./config/assets/icons/dart.svg"
+html = "./config/assets/icons/html.svg"
+ai = "./config/assets/icons/ai.svg"
+jupyter = "./config/assets/icons/jupyter.svg"
+linux = "./config/assets/icons/linux.svg"

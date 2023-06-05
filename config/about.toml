@@ -1,5 +1,4 @@
-[my]
-title = "Ivan Huamani"
+name = "Ivan Huamani"
 rol = "Flutter Developer"
 email = "email@example.com"
 phone = "+1 (213) 352-2795"
@@ -11,41 +10,3 @@ I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web 
 
 My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
 """
-
-# https://ionic.io/ionicons
-[social]
-facebook = "https://facebook.com/"
-twitter = "https://twitter.com/"
-instagram = "https://instagram.com/"
-github = "https://github.com/ivansaul"
-
-
-[competencies]
-
-[competencies.1]
-title = "Fast Learner"
-icon = "./config/assets/avatars/avatar-1.png"
-text = "I have the ability to quickly acquire new knowledge and adapt to changing technological environments."
-
-[competencies.2]
-title = "Teamwork"
-icon = "./config/assets/avatars/avatar-2.png"
-text = "I collaborate effectively in multidisciplinary projects and communicate clearly with team members."
-
-[competencies.3]
-title = "Problem Solving"
-icon = "./config/assets/avatars/avatar-3.png"
-text = "I am creative and efficient in identifying and solving technical problems."
-
-[competencies.4]
-title = "Effective Communication"
-icon = "./config/assets/avatars/avatar-4.png"
-text = "I have the skill to convey ideas clearly and concisely, both technically and non-technically."
-
-
-# Technology I have woirked with
-[technologies]
-python = "./config/assets/icons/python.svg"
-firebase = "./config/assets/icons/firebase.svg"
-flutter = "./config/assets/icons/flutter.svg"
-dart = "./config/assets/icons/dart.svg"

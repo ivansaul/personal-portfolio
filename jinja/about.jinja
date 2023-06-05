@@ -7,7 +7,7 @@
 
   <section class="about-text">
 
-    {% for line in about.my.presentation.split('\n') %}
+    {% for line in about.presentation.split('\n') %}
     {% if line.strip() %}
     <p>{{ line }}</p>
     {% endif %}
@@ -105,7 +105,7 @@
     <h3 class="h3 testimonials-title">Competencies</h3>
 
     <ul class="testimonials-list has-scrollbar">
-      {% for competencie in about.competencies.values() %}
+      {% for competencie in competencies %}
 
       <li class="testimonials-item">
         <div class="content-card" data-testimonials-item>
@@ -148,7 +148,7 @@
 
       <div class="modal-img-wrapper">
         <figure class="modal-avatar-box">
-          <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+          <img src="./assets/images/avatar-1.png" alt="{{about.name}}" width="80" data-modal-img>
         </figure>
 
         <img src="./assets/images/icon-quote.svg" alt="quote icon">
@@ -156,17 +156,13 @@
 
       <div class="modal-content">
 
-        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+        <h4 class="h3 modal-title" data-modal-title>{{about.name}}</h4>
 
         {# <time datetime="2021-06-14">14 June, 2021</time> #}
 
         <div data-modal-text>
           <p>
-            Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-            lot of experience
-            and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-            consectetur adipiscing
-            elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+            {# lorem #}
           </p>
         </div>
 
@@ -186,7 +182,7 @@
     <h3 class="h3 clients-title">Technologies Experience</h3>
 
     <ul class="clients-list has-scrollbar">
-      {% for icon in about.technologies.values() %}
+      {% for icon in technologies %}
       
       <li class="clients-item">
         <a href="#">

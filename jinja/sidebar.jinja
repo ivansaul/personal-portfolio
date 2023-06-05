@@ -4,13 +4,13 @@
   <div class="sidebar-info">
 
     <figure class="avatar-box">
-      <img src="{{about.my.avatar}}" alt="{{about.my.name}}" width="80">
+      <img src="{{about.avatar}}" alt="{{about.name}}" width="80">
     </figure>
 
     <div class="info-content">
-      <h1 class="name" title="{{about.my.name}}">{{about.my.name}}</h1>
+      <h1 class="name" title="{{about.name}}">{{about.name}}</h1>
 
-      <p class="title">{{about.my.rol}}</p>
+      <p class="title">{{about.rol}}</p>
     </div>
 
     <button class="info_more-btn" data-sidebar-btn>
@@ -36,7 +36,7 @@
         <div class="contact-info">
           <p class="contact-title">Email</p>
 
-          <a href="#" class="contact-link">{{about.my.email}}</a>
+          <a href="#" class="contact-link">{{about.email}}</a>
         </div>
 
       </li>
@@ -50,7 +50,7 @@
         <div class="contact-info">
           <p class="contact-title">Phone</p>
 
-          <a href="tel:{{about.my.phone}}" class="contact-link">{{about.my.phone}}</a>
+          <a href="tel:{{about.phone}}" class="contact-link">{{about.phone}}</a>
         </div>
 
       </li>
@@ -64,7 +64,7 @@
         <div class="contact-info">
           <p class="contact-title">Birthday</p>
 
-          <time datetime="{{about.my.birthday}}">{{about.my.birthday}}</time>
+          <time datetime="{{about.birthday}}">{{about.birthday}}</time>
         </div>
 
       </li>
@@ -78,7 +78,7 @@
         <div class="contact-info">
           <p class="contact-title">Location</p>
 
-          <address>{{about.my.location}}</address>
+          <address>{{about.location}}</address>
         </div>
 
       </li>
@@ -89,7 +89,7 @@
 
     <ul class="social-list">
 
-      {% for red, url in about.social.items() %}
+      {% for red, url in social.items() %}
       <li class="social-item">
         <a href="{{url}}" class="social-link" , target="_blank">
           <ion-icon name="logo-{{red}}"></ion-icon>
