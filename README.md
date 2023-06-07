@@ -8,7 +8,7 @@
 
 Dev-Portfolio is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, JavaScript and Python.
 
-Live Preview: 👉🏽 devfolio.dev
+Live Preview: 👉🏽 [devfolio.githu.io](devfolio)
 
 ## Screenshots
 ![Desktop Demo](https://i.imgur.com/xKkMSwR.png "Desktop Demo")
@@ -79,3 +79,4 @@ This project is based on [vcard portfolio](vard). The main focus of this project
 MIT
 
 [vcard]: https://github.com/codewithsadee/vcard-personal-portfolio
+[devfolio]: https://ivansaul.github.io/devfolio
