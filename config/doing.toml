@@ -1,0 +1,19 @@
+[[doing]]
+title = "Mobile Apps"
+icon = "./config/assets/icons/mobile.svg"
+text = "Professional development of applications for iOS and Android."
+
+[[doing]]
+title = "Scripting"
+icon = "./config/assets/icons/code.svg"
+text = "Automation and task scripting using Python to enhance efficiency and productivity."
+
+[[doing]]
+title = "UI/UX Designing"
+icon = "./config/assets/icons/compass.svg"
+text = "Intuitive and visually appealing user interfaces and user experiences."
+
+[[doing]]
+title = "Web Development"
+icon = "./config/assets/icons/laptop-code.svg"
+text = "High-quality development of sites at the professional level."

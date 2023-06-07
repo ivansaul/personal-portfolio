@@ -8,6 +8,7 @@ class Portfolio:
     def __init__(self):
         self.about_toml = "config/about.toml"
         self.social_toml = "config/social.toml"
+        self.doing_toml = "config/doing.toml"
         self.competencies_toml = "config/competencies.toml"
         self.technologies_toml = "config/technologies.toml"
         self.resume_toml = "config/resume.toml"
@@ -39,6 +40,9 @@ class Portfolio:
 
     def social(self):
         return self.load_toml_file(self.social_toml)
+    
+    def doing(self):
+        return self.load_toml_file(self.doing_toml)['doing']
     
     def competencies(self):
         data = self.load_toml_file(self.competencies_toml)['competencie']
@@ -74,6 +78,7 @@ if __name__ == "__main__":
 
     portfolio = Portfolio()
     about = portfolio.about()
+    doing = portfolio.doing()
     social = portfolio.social()
     competencies = portfolio.competencies()
     technologies = portfolio.technologies()
@@ -91,6 +96,7 @@ if __name__ == "__main__":
     html_render = template.render(
         about = about,
         social = social,
+        doing = doing,
         competencies = competencies,
         technologies = technologies,
         resume = resume,
