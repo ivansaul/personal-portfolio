@@ -42,6 +42,18 @@ config
 |-- technologies.toml
 ```
 
+For example, to set your contact information, edit `config/about.toml`.
+
+```toml
+name = "Richard hanrick"
+rol = "Flutter Developer"
+email = "richard@example.com"
+phone = "+1 (213) 352-2795"
+birthday = "June 26, 1996"
+location = "Sacramento, California, USA"
+avatar = "./../my-avatar.png"
+```
+
 ### Step 3:
 Create a personal access token.
 
