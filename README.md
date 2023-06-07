@@ -1,54 +1,81 @@
-# personal portfolio
+# Dev - Personal Portfolio
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ivansaul/personal-portfolio)
 ![GitHub stars](https://img.shields.io/github/stars/ivansaul/personal-portfolio?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/ivansaul/personal-portfolio?style=social)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Live Preview: 👉🏽 devfolio.dev
-
-Hello there, I'm ivansaul. This is my personal website, which contains public information that anyone can find on the internet.
 
 Dev-Portfolio is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, JavaScript and Python.
 
-## Demo
+Live Preview: 👉🏽 devfolio.dev
 
+## Screenshots
 ![Desktop Demo](https://i.imgur.com/xKkMSwR.png "Desktop Demo")
 ![Mobile Demo](https://i.imgur.com/G1A1nBu.pngg "Mobile Demo")
 
-## How to make it yours? 
+## **How to make it yours?** 
 
-### Step 1: Clone this project
+### Step 1: 
+Fork this project and rename the repo to `your_username.github.io`
+
+### Step 2:
+Go to the `config/` folder and replace the default data with your personal information.
 
 ```bash
-git clone https://github.com/ivansaul/personal-portfolio.git
+config
+|-- assets
+|   |-- avatars
+|   |-- icons
+|   |-- posts
+|   |-- projects
+|-- about.toml
+|-- blog.toml
+|-- competencies.toml
+|-- doing.toml
+|-- projects.toml
+|-- resume.toml
+|-- social.toml
+|-- technologies.toml
 ```
 
-### Step 2: Edit the config files.
+### Step 3:
+Create a personal access token.
 
-### Step 3: Deploying the Web Build
-- You can now simply copy the <b>web folder</b> under the and host it to your Preferred Hosting.
-- List of Free Hosting
-   * <a href='https://github.com'>Github</a>
-   * <a href = 'https://firebase.google.com/products/hosting'>Firebase</a>
-   * <a href = 'https://www.netlify.com/'>Netlify</a>
-   
+`Settings(Account) > Personal access tokens > tokens (classic) > Generate new token > Generate new token (classic) `
 
-### Step 4: Enjoy 😉
+[x] Expiration: No expiration
+
+### Step 4: 
+In the repository, create a new secret with the name `TOKEN_GITHUB` and paste your personal token there.
+
+`Settings(Repo) > Secrets and Variables > Actions > Repository secrets`
+
+### Step 5: 
+Enable read and write permissions on:
+
+`Settings(Repo) > Actions > General > Workflow permissions > Read and write permissions > save`
+
+### Step 6: 
+Enable GitHub Pages on:
+
+`Settings(Repo) > Pages > Branch > Master > /(root > save`
+
+### Step 6: Enjoy 😉
+Now you can visit your portfolio at `https://your_username.github.io`
+
+Your personal portfolio will be built and updated automatically whenever any changes occur in the configuration files.
  
 > If you like my work and want to show some ❤️, please consider giving a ⭐️ to this Repository.
 
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
 ## Contact
+If you want to contact me you can reach me at [Instagram](#).
 
-If you want to contact me you can reach me at [Twitter](#).
+## Credits
+This project is based on [vcard portfolio](vard). The main focus of this project is adding new features and make it accessible to everyone.
 
 ## License
 
 MIT
+[reposize]: 
+[vcard]: https://github.com/codewithsadee/vcard-personal-portfolio
