@@ -6,9 +6,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-Personal - Portfolio is a fully responsive personal developer portfolio singlepage website, responsive for all devices, built using HTML, CSS, JavaScript and Python.
+Personal - Portfolio is a fully responsive personal developer portfolio single-page website, responsive for all devices, built using HTML, CSS, JavaScript and Python.
 
 Live Preview: 👉🏽 [personal-portfolio.githu.io](https://ivansaul.github.io/personal-portfolio/)
+
+## Demo
+![Demo](https://raw.githubusercontent.com/ivansaul/demos/master/python/personal-portfolio-demo.gif)
 
 ## Screenshots
 ![Desktop Demo](https://i.imgur.com/xKkMSwR.png "Desktop Demo")
@@ -80,3 +83,4 @@ MIT
 
 [vcard]: https://github.com/codewithsadee/vcard-personal-portfolio
 [devfolio]: https://ivansaul.github.io/personal-portfolio
+[demo]: https://raw.githubusercontent.com/ivansaul/demos/master/python/personal-portfolio-demo.gif
