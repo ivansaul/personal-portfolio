@@ -14,10 +14,6 @@ Live Preview: 👉🏽 [personal-portfolio.githu.io](https://ivansaul.github.io/
 ## Demo
 ![Demo](https://raw.githubusercontent.com/ivansaul/demos/master/python/personal-portfolio-demo.gif)
 
-## Screenshots
-![Desktop Demo](https://i.imgur.com/xKkMSwR.png "Desktop Demo")
-![Mobile Demo](https://i.imgur.com/G1A1nBu.pngg "Mobile Demo")
-
 ## **How to make it yours?** 
 
 ### Step 1: 
@@ -83,6 +79,10 @@ Now you can visit your portfolio at `https://your_username.github.io`
 Your personal portfolio will be built and updated automatically whenever any changes occur in the configuration files.
  
 > If you like my work and want to show some ❤️, please consider giving a ⭐️ to this Repository.
+
+## Screenshots
+![Desktop Demo](https://i.imgur.com/xKkMSwR.png "Desktop Demo")
+![Mobile Demo](https://i.imgur.com/G1A1nBu.pngg "Mobile Demo")
 
 ## Contact
 If you want to contact me you can reach me at [Instagram](#).
