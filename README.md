@@ -1,4 +1,4 @@
-# Dev - Personal Portfolio
+# Personal Portfolio - Developer
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ivansaul/personal-portfolio)
 ![GitHub stars](https://img.shields.io/github/stars/ivansaul/personal-portfolio)
@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-Dev-Portfolio is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, JavaScript and Python.
+Personal - Portfolio is a fully responsive personal developer portfolio singlepage website, responsive for all devices, built using HTML, CSS, JavaScript and Python.
 
 Live Preview: 👉🏽 [personal-portfolio.githu.io](https://ivansaul.github.io/personal-portfolio/)
 
