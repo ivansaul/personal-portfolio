@@ -1,8 +1,8 @@
 # Dev - Personal Portfolio
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ivansaul/personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/ivansaul/personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/ivansaul/personal-portfolio?style=social)
+![GitHub stars](https://img.shields.io/github/stars/ivansaul/personal-portfolio)
+![GitHub forks](https://img.shields.io/github/forks/ivansaul/personal-portfolio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -44,7 +44,7 @@ Create a personal access token.
 
 `Settings(Account) > Personal access tokens > tokens (classic) > Generate new token > Generate new token (classic) `
 
-[x] Expiration: No expiration
+- [x] Expiration: No expiration
 
 ### Step 4: 
 In the repository, create a new secret with the name `TOKEN_GITHUB` and paste your personal token there.
@@ -77,5 +77,5 @@ This project is based on [vcard portfolio](vard). The main focus of this project
 ## License
 
 MIT
-[reposize]: 
+
 [vcard]: https://github.com/codewithsadee/vcard-personal-portfolio
