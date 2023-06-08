@@ -74,7 +74,7 @@ Enable GitHub Pages on:
 `Settings(Repo) > Pages > Branch > Master > /(root > save`
 
 ### Step 6: Enjoy 😉
-Now you can visit your portfolio at `https://your_username.github.io`
+Now you can visit your portfolio at `https://your_github_username.github.io`
 
 Your personal portfolio will be built and updated automatically whenever any changes occur in the configuration files.
  
