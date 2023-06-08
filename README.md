@@ -31,7 +31,7 @@ config
 |   |-- projects
 |-- about.toml
 |-- blog.toml
-|-- competencies.toml
+|-- softskills.toml
 |-- doing.toml
 |-- projects.toml
 |-- resume.toml
