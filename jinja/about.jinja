@@ -137,7 +137,7 @@
     <h3 class="h3 clients-title">{{technologies.title}}</h3>
 
     <ul class="clients-list has-scrollbar">
-      {% for icon in technologies.technologies %}
+      {% for icon in technologies.technologies.values() %}
 
       <li class="clients-item">
         <a href="#">

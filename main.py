@@ -49,7 +49,6 @@ class Portfolio:
     
     def technologies(self):
         data = self.load_toml_file(self.technologies_toml)
-        data['technologies'] = list(data['technologies'].values())
         return data
     
     def resume(self):
