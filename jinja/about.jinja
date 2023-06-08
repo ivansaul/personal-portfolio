@@ -53,26 +53,26 @@
   <!--
           - testimonials
         -->
-
+  {% if softskills.enabled %}
   <section class="testimonials">
 
-    <h3 class="h3 testimonials-title">Competencies</h3>
+    <h3 class="h3 testimonials-title">{{softskills.title}}</h3>
 
     <ul class="testimonials-list has-scrollbar">
-      {% for competencie in competencies %}
+      {% for skill in softskills.skills %}
 
       <li class="testimonials-item">
         <div class="content-card" data-testimonials-item>
 
           <figure class="testimonials-avatar-box">
-            <img src="{{competencie.icon}}" alt="{{competencie.title}}" width="60" data-testimonials-avatar>
+            <img src="{{skill.icon}}" alt="{{skill.title}}" width="60" data-testimonials-avatar>
           </figure>
 
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>{{competencie.title}}</h4>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>{{skill.title}}</h4>
 
           <div class="testimonials-text" data-testimonials-text>
             <p>
-              {{competencie.text}}
+              {{skill.text}}
             </p>
           </div>
 
@@ -84,6 +84,7 @@
       < </ul>
 
   </section>
+
 
 
   <!--
@@ -125,18 +126,18 @@
     </section>
 
   </div>
-
+  {% endif %}
 
   <!--
           - clients
         -->
-
+  {% if technologies.enabled %}
   <section class="clients">
 
-    <h3 class="h3 clients-title">Technologies Experience</h3>
+    <h3 class="h3 clients-title">{{technologies.title}}</h3>
 
     <ul class="clients-list has-scrollbar">
-      {% for icon in technologies %}
+      {% for icon in technologies.technologies %}
 
       <li class="clients-item">
         <a href="#">
@@ -149,5 +150,6 @@
     </ul>
 
   </section>
+  {% endif %}
 
 </article>

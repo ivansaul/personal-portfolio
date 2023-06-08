@@ -1,6 +1,13 @@
+############### Section config ##################
+#################################################
+title = "Tech Experience"
+enabled = true # false
+
+############### Technologies ####################
+#################################################
 # Technology I have worked with
 # name = "./.../../icon_path"
-
+[technologies]
 python = "./config/assets/icons/python.svg"
 flutter = "./config/assets/icons/flutter.svg"
 git = "./config/assets/icons/git.svg"

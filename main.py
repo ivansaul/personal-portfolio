@@ -9,7 +9,7 @@ class Portfolio:
         self.about_toml = "config/about.toml"
         self.social_toml = "config/social.toml"
         self.doing_toml = "config/doing.toml"
-        self.competencies_toml = "config/competencies.toml"
+        self.softskills_toml = "config/softskills.toml"
         self.technologies_toml = "config/technologies.toml"
         self.resume_toml = "config/resume.toml"
         self.projects_toml = "config/projects.toml"
@@ -44,17 +44,13 @@ class Portfolio:
     def doing(self):
         return self.load_toml_file(self.doing_toml)['doing']
     
-    def competencies(self):
-        data = self.load_toml_file(self.competencies_toml)['competencie']
-        max_length  = max([len(item['text'])  for item in data])
-        for item in data:
-            item["text"] = item["text"].ljust(max_length)
-
-        return data
+    def softskills(self):
+        return self.load_toml_file(self.softskills_toml)
     
     def technologies(self):
         data = self.load_toml_file(self.technologies_toml)
-        return list(data.values())
+        data['technologies'] = list(data['technologies'].values())
+        return data
     
     def resume(self):
         toml_cfg = self.load_toml_file(self.resume_toml)
@@ -80,7 +76,7 @@ if __name__ == "__main__":
     about = portfolio.about()
     doing = portfolio.doing()
     social = portfolio.social()
-    competencies = portfolio.competencies()
+    softskills = portfolio.softskills()
     technologies = portfolio.technologies()
     resume = portfolio.resume()
     projects = portfolio.projects()
@@ -97,7 +93,7 @@ if __name__ == "__main__":
         about = about,
         social = social,
         doing = doing,
-        competencies = competencies,
+        softskills = softskills,
         technologies = technologies,
         resume = resume,
         projects = projects,
