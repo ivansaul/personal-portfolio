@@ -5,7 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>{{about.name}} - Portfolio</title>
+
+  <!--meta-->
+  <link href="https://google.com/" rel="canonical">
+  <meta name="description" content="{{about.presentation}}">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://google.com/">
+  <meta property="og:title" content="{{about.name}} | {{about.rol}} | Portfolio">
+  <meta property="og:description" content="{{about.presentation}}">
+  <meta property="og:image" content="{{about.avatar}}">
+  <meta property="og:image:secure_url" content="{{about.avatar}}">
+  <meta property="og:site_name" content="{{about.name}} | {{about.rol}} | Portfolio">
+  <meta name="twitter:card" content="photo">
+  <meta name="twitter:creator" content="@google">
+  <meta name="twitter:title" content="{{about.name}} | {{about.rol}} | Portfolio">
+  <meta name="twitter:description" content="{{about.presentation}}">
+  <meta name="twitter:image" content="{{about.avatar}}">
+  <meta name="twitter:image:width" content="200">
+  <meta name="twitter:image:height" content="200">
+  <meta name="keywords" content="{{about.name}}, github, python, developer, flutter" />
+  <!--meta-->
+
 
   <!--
     - favicon
@@ -78,7 +100,7 @@
       -->
 
       {% include 'blog.jinja' %}
-      
+
 
       <!--
         - #CONTACT
