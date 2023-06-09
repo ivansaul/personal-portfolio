@@ -1,62 +1,75 @@
-##########################
-##########################
-[education] ##############
-##########################
-##########################
-[education.1]
+############## Education config #################
+#################################################
+[[education]]
 title = "High school of art and design"
 timeline = "2002 — 2004"
 description = "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
 
-[education.2]
+[[education]]
 title = "New york academy of art"
 timeline = "2006 — 2007"
 description = "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis.."
 
-[education.3]
+[[education]]
 title = "University school of the arts"
 timeline = "2007 — 2008"
 description = "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
 
 
-##########################
-##########################
-[experience] #############
-##########################
-##########################
-[experience.1]
+############## Experience config ################
+#################################################
+[[experience]]
 title = "Web designer"
 timeline = "2010 — 2013"
 description = "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
 
-[experience.2]
+[[experience]]
 title = "Art director"
 timeline = "2013 — 2015"
 description = "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
 
-[experience.3]
+[[experience]]
 title = "Creative director"
 timeline = "2015 — Present"
 description = "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
 
 
-##########################
-##########################
-[skill] #################
-##########################
-##########################
-[skill.1]
+############## Skills config ####################
+#################################################
+[skills] 
+title = "My Skills"
+enabled = true
+show_bar = true
+show_value = true
+
+[[skill]]
 title = "Web design"
 value = "80%"
 
-[skill.2]
+[[skill]]
 title = "Graphic design"
 value = "70%"
 
-[skill.3]
+[[skill]]
 title = "Branding"
 value = "90%"
 
-[skill.4]
+[[skill]]
 title = "WordPress"
+value = "50%"
+
+############## Language config ##################
+#################################################
+[languages]
+title = "Languages"
+enabled = true
+show_bar = true
+show_value = true
+
+[[language]]
+title = "Ingles"
+value = "60%"
+
+[[language]]
+title = "French"
 value = "50%"
