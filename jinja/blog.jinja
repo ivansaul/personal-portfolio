@@ -9,7 +9,7 @@
 
     <ul class="blog-posts-list">
 
-      {% for post in blog.values() | reverse %}
+      {% for post in blog.post %}
 
       <li class="blog-post-item">
         <a href="{{post.url}}" target="_blank">
