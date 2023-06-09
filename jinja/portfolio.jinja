@@ -51,7 +51,7 @@
 
     <ul class="project-list">
 
-      {% for project in projects.values() %}
+      {% for project in projects.project %}
 
       <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
         <a href="{{project.url}}" target="_blank">

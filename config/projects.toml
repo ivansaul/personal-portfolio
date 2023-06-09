@@ -1,52 +1,52 @@
-[project1]
+[[project]]
 title = "Finance"
 category = "Web development"
 image = "./config/assets/projects/project-1.jpg"
 url = "https://github.com/ivansaul/flutter_cinemapedia_app#screens"
 
-[project2]
+[[project]]
 title = "Orizon"
 category = "Web development"
 image = "./config/assets/projects/project-2.png"
 url = "https://github.com/ivansaul/flutter_coffee_shop_app#screens"
 
-[project3]
+[[project]]
 title = "Fundo"
 category = "Web design"
 image = "./config/assets/projects/project-3.jpg"
 url = "https://github.com/ivansaul/flutter_travel_news_app#screens"
 
-[project4]
+[[project]]
 title = "Brawlhalla"
 category = "Applications"
 image = "./config/assets/projects/project-4.png"
 url = "https://github.com/ivansaul/flutter_todo_app#screens"
 
-[project5]
+[[project]]
 title = "DSM."
 category = "Web design"
 image = "./config/assets/projects/project-5.png"
 url = "https://github.com/ivansaul/codigo_facilito_downloader"
 
-[project6]
+[[project]]
 title = "MetaSpark"
 category = "Web design"
 image = "./config/assets/projects/project-6.png"
 url = "https://github.com/ivansaul/flutter_todo_app"
 
-[project7]
+[[project]]
 title = "Summary"
 category = "Web development"
 image = "./config/assets/projects/project-7.png"
 url = "https://github.com/ivansaul/flutter_todo_app"
 
-[project8]
+[[project]]
 title = "Task Manager"
 category = "Applications"
 image = "./config/assets/projects/project-8.jpg"
 url = "https://github.com/ivansaul/flutter_todo_app"
 
-[project9]
+[[project]]
 title = "Arrival"
 category = "Web development"
 image = "./config/assets/projects/project-9.png"
