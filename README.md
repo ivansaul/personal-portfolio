@@ -59,7 +59,7 @@ Create a personal access token.
 - [x] Expiration: No expiration
 
 ### Step 4: 
-Create a new secret with the name `TOKEN_GITHUB` and paste your personal token there.
+Create a new secret with the name `PORTFOLIO_TOKEN` and paste your personal token there.
 
 `Settings(Repo) > Secrets and Variables > Actions > Repository secrets > New secret`
 
