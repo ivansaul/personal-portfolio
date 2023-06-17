@@ -92,6 +92,14 @@ Your personal portfolio will be built and updated automatically whenever any cha
 ![Desktop Demo](https://i.imgur.com/xKkMSwR.png "Desktop Demo")
 ![Mobile Demo](https://i.imgur.com/G1A1nBu.pngg "Mobile Demo")
 
+## Contribute
+
+Contributions are welcome.
+
+## Facing any Issue?
+
+Feel free to open an [Issue][issue] :)
+
 ## Contact
 If you want to contact me you can reach me at [Discord][discord].
 
@@ -107,4 +115,4 @@ MIT
 [demo]: https://raw.githubusercontent.com/ivansaul/demos/master/python/personal-portfolio-demo.gif
 [discord]: https://discord.com/users/744755977684779038
 [discord-server]: https://discord.gg/b72uAVBz6b
-
+[issue]: https://github.com/ivansaul/personal-portfolio/issues
