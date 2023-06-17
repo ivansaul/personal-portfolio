@@ -17,7 +17,9 @@ Live Preview: 👉🏽 [personal-portfolio.githu.io](https://ivansaul.github.io/
 ## **How to make it yours?** 
 
 ### Step 1: 
-Fork this project and rename the repo to `your_github_username.github.io`
+Fork this project and rename the repo to `your_github_username.github.io`.
+
+For example: `ivansaul -> ivansaul.github.io`
 
 ### Step 2:
 Go to the `config/` folder and replace the default data with your personal information.
