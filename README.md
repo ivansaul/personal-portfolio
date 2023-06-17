@@ -105,4 +105,6 @@ MIT
 [vcard]: https://github.com/codewithsadee/vcard-personal-portfolio
 [devfolio]: https://ivansaul.github.io/personal-portfolio
 [demo]: https://raw.githubusercontent.com/ivansaul/demos/master/python/personal-portfolio-demo.gif
-[discord]: https://discord.gg/b72uAVBz6b
+[discord]: https://discord.com/users/744755977684779038
+[discord-server]: https://discord.gg/b72uAVBz6b
+
