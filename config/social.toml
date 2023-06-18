@@ -1,15 +1,15 @@
 # https://ionic.io/ionicons
-# <ion-icon name="logo-[[name]]"></ion-icon>
+# <ion-icon name="[[name]]"></ion-icon>
 # name = "https://example.com/"
 
-facebook = "https://facebook.com/"
-twitter = "https://twitter.com/"
-instagram = "https://instagram.com/"
-linkedin = "https://www.linkedin.com/"
-github = "https://github.com/ivansaul"
-dribbble = "https://dribbble.com/"
-# figma = "figma.com/"
-# youtube = "https://youtube.com/"
-# reddit = "https://www.reddit.com/"
-# discord = "https://discord.com/"
-# pinterest = "https://www.pinterest.com/"
+logo-facebook = "https://facebook.com/"
+logo-twitter = "https://twitter.com/"
+logo-instagram = "https://instagram.com/"
+logo-linkedin = "https://www.linkedin.com/"
+logo-github = "https://github.com/ivansaul"
+logo-dribbble = "https://dribbble.com/"
+# logo-figma = "figma.com/"
+# logo-youtube = "https://youtube.com/"
+# logo-reddit = "https://www.reddit.com/"
+# logo-discord = "https://discord.com/"
+# logo-pinterest = "https://www.pinterest.com/"
