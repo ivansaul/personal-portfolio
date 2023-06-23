@@ -5,7 +5,7 @@ name: Jinja
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [ master ]
 #  pull_request:
 #    branches: [ master ]
 
@@ -18,9 +18,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      with:
-        ref: ${{ github.head_ref }}
-        fetch-depth: 0
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
@@ -42,4 +39,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.PORTFOLIO_TOKEN }}
-        branch: ${{ github.head_ref }}
+        branch: master
