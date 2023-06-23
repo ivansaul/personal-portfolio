@@ -5,7 +5,7 @@ name: Jinja
 
 on:
   push:
-    branches: [ master , main ]
+    branches: [ master, main ]
 #  pull_request:
 #    branches: [ master ]
 
