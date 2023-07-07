@@ -1,14 +1,14 @@
-name = "Richard hanrick!"
-rol = "Flutter Developer"
-email = "richard@example.com"
-phone = "+1 (213) 352-2795"
-birthday = "June 26, 1996"
-location = "Sacramento, California, USA"
+name = "Francisco Javier Moreno Vazquez"
+rol = "Mechatronics Engineer"
+email = "fj.morenovazquez@ugto.mx"
+phone = "+52 (456) 124-1577"
+birthday = "August 28, 2000"
+location = "Valle de Santiago, Guanajauto, mexico"
 avatar = "./config/assets/avatars/my-avatar.png"
-username = "richardhanrick" # <-- github user name
-googlemaps = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd" 
+username = "fcomovaz" # <-- github user name
+googlemaps = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29917.864643267225!2d-101.21427653344152!3d20.39389244045532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c8d0935957e15%3A0x3a870577baeca000!2sValle%20de%20Santiago%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1688689557775!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
 presentation = """
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+As a Mechatronics Engineering student, I am passionate about expanding my knowledge through research and embracing challenges to grow personally and professionally. My participation in extracurricular activities such as summer research programs has equipped me with valuable problem‑solving, teamwork, and communication skills. 
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+I enjoy sharing my knowledge with others and believe in the importance of collaborative learning. I am eager to contribute my enthusiasm and expertise to a dynamic and innovative team.
 """
