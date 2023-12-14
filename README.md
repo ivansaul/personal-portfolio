@@ -12,7 +12,7 @@ Live Preview: 👉🏽 [personal-portfolio.githu.io](https://ivansaul.github.io/
 [![Jinja](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml/badge.svg)](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ivansaul/personal-portfolio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/badge/-Discord-424549?style=social&logo=discord)](https://discord.gg/b72uAVBz6b)
+[![Discord](https://img.shields.io/badge/-Discord-424549?style=social&logo=discord)](https://discord.gg/tDvybtJ7y9)
 
 ### Don't forget to ⭐ the repo
 
@@ -125,5 +125,5 @@ MIT
 [devfolio]: https://ivansaul.github.io/personal-portfolio
 [demo]: https://raw.githubusercontent.com/ivansaul/demos/master/python/personal-portfolio-demo.gif
 [discord]: https://discord.com/users/744755977684779038
-[discord-server]: https://discord.gg/b72uAVBz6b
+[discord-server]: https://discord.gg/tDvybtJ7y9
 [issue]: https://github.com/ivansaul/personal-portfolio/issues
