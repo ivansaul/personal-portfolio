@@ -64,8 +64,8 @@ class Portfolio:
     def categories(self):
         filters = []
         projects = self.projects()["project"]
-        for projec in projects:
-            filters.append(projec["category"])
+        for project in projects:
+            filters.append(project["category"])
         return set(filters)
 
 
