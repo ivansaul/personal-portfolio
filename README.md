@@ -4,18 +4,13 @@
     <b><a href="https://ivansaul.github.io/personal-portfolio">Personal Portfolio - Developer</a></b>
 </h1>
 
-**`Personal Portfolio`** is a fully responsive personal developer <br/>
-portfolio single-page website, responsive for all devices, <br/>
-built using **`HTML`**, **`CSS`**, **`JavaScript`**, and **`Python`**.
-
-**`Live Demo:`** 👉🏽 [personal-portfolio.github.io][devfolio]
+**`Personal Portfolio`** is a fully responsive personal developer portfolio single-page website, <br/>
+responsive for all devices, built using **`HTML`**, **`CSS`**, **`JavaScript`**, and **`Python`**.
 
 ![Made-with-python](https://img.shields.io/badge/Made%20with-Python-orange)
 [![Jinja](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml/badge.svg)](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ivansaul/personal-portfolio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-**`Don't forget to ⭐ the repo`**
 
 ![GitHub stars][github-stars]
 ![GitHub forks][github-forks]
@@ -28,7 +23,12 @@ built using **`HTML`**, **`CSS`**, **`JavaScript`**, and **`Python`**.
 
 ---
 
+<div align="center">
+
 ![Demo][demo]
+**`Live Demo:`** 👉🏽 [personal-portfolio.github.io][devfolio]
+
+</div>
 
 ## **How to make it yours?**
 
