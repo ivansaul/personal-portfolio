@@ -36,9 +36,16 @@ responsive for all devices, built using **`HTML`**, **`CSS`**, **`JavaScript`**,
 
 Fork this project and rename the repo to `your_github_username.github.io`.
 
-For example: `username: ivansaul -> ivansaul.github.io`
+> [!IMPORTANT]
+> For example, if your GitHub username is `ivansaul`. Rename the repository to `ivansaul.github.io`
 
 ### Step 2
+
+Enable GitHub Pages on:
+
+`Repository(Settings) > Pages > Build and deployment > Source(GitHub Actions)`
+
+### Step 3
 
 Go to the `config/` folder and replace the default data with your personal information.
 
@@ -68,28 +75,17 @@ email = "richard@example.com"
 phone = "+1 (213) 352-2795"
 birthday = "June 26, 1996"
 location = "Sacramento, California, USA"
-avatar = "./../my-avatar.png"
+avatar = "./path/to/my-avatar.png"
 ```
 
-### Step 3
+> [!TIP]
+> You can upload your images directly to the `config/assets` folder or use an image server like [Imgur][imgur]. Both options are valid for customizing your portfolio. For example:
+>
+> `avatar = "https://i.imgur.com/H5gx7JF.png"`
+>
+> `avatar = "./config/assets/avatars/my-avatar.png"`
 
-Enable read and write permissions on:
-
-`Settings(Repo) > Actions > General > Workflow permissions > Read and write permissions > save`
-
-### Step 4
-
-Enable GitHub Pages on:
-
-`Settings(Repo) > Pages > Build and deployment > Source(GitHub Actions)`
-
-### Step 5
-
-Enable workflows on:
-
-`Actions(Repo) > I understand my workflows, go ahead and enable them`
-
-### Step 6: Enjoy 😉
+### Step 4: Enjoy 😉
 
 Now you can visit your portfolio at `https://your_github_username.github.io`
 
@@ -132,3 +128,4 @@ MIT
 [github-forks]: https://img.shields.io/github/forks/ivansaul/personal-portfolio?style=social
 [desktop-screenshot]: https://i.imgur.com/xKkMSwR.png
 [mobile-screenshot]: https://i.imgur.com/G1A1nBu.png
+[imgur]: https://imgur.com
