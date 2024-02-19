@@ -36,7 +36,7 @@ responsive for all devices, built using **`HTML`**, **`CSS`**, **`JavaScript`**,
 
 Fork this project and rename the repo to `your_github_username.github.io`.
 
-For example: `ivansaul -> ivansaul.github.io`
+For example: `username: ivansaul -> ivansaul.github.io`
 
 ### Step 2
 
@@ -73,37 +73,23 @@ avatar = "./../my-avatar.png"
 
 ### Step 3
 
-Create a personal access token.
-
-`Settings(Account) > Developer settings > Personal access tokens > tokens (classic) > Generate new token > Generate new token (classic)`
-
-- [x] Expiration: No expiration
-
-### Step 4
-
-Create a new secret with the name `PORTFOLIO_TOKEN` and paste your personal token there.
-
-`Settings(Repo) > Secrets and Variables > Actions > Repository secrets > New secret`
-
-### Step 5
-
 Enable read and write permissions on:
 
 `Settings(Repo) > Actions > General > Workflow permissions > Read and write permissions > save`
 
-### Step 6
+### Step 4
 
 Enable GitHub Pages on:
 
-`Settings(Repo) > Pages > Branch > Master > /(root > save`
+`Settings(Repo) > Pages > Build and deployment > Source(GitHub Actions)
 
-### Step 7
+### Step 5
 
 Enable workflows on:
 
 `Actions(Repo) > I understand my workflows, go ahead and enable them`
 
-### Step 8: Enjoy 😉
+### Step 6: Enjoy 😉
 
 Now you can visit your portfolio at `https://your_github_username.github.io`
 
