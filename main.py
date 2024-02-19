@@ -81,7 +81,7 @@ if __name__ == "__main__":
     blog = portfolio.blog()
     categories = portfolio.categories()
 
-    env = Environment(loader=FileSystemLoader("jinja"))
+    env = Environment(loader=FileSystemLoader("src/jinja"))
     env.filters["format_date"] = portfolio.format_date
 
     template = env.get_template("index.jinja")
