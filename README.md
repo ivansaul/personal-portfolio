@@ -81,7 +81,7 @@ Enable read and write permissions on:
 
 Enable GitHub Pages on:
 
-`Settings(Repo) > Pages > Build and deployment > Source(GitHub Actions)
+`Settings(Repo) > Pages > Build and deployment > Source(GitHub Actions)`
 
 ### Step 5
 
