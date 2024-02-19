@@ -47,6 +47,12 @@ Enable GitHub Pages on:
 
 ### Step 3
 
+Enable workflows:
+
+`Repository(Actions) > I understand my workflows, go ahead and enable them`
+
+### Step 4
+
 Go to the `config/` folder and replace the default data with your personal information.
 
 ```bash
@@ -85,7 +91,7 @@ avatar = "./path/to/my-avatar.png"
 >
 > `avatar = "./config/assets/avatars/my-avatar.png"`
 
-### Step 4: Enjoy 😉
+### Step 5: Enjoy 😉
 
 Now you can visit your portfolio at `https://your_github_username.github.io`
 
