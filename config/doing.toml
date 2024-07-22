@@ -1,12 +1,13 @@
 [[doing]]
-title = "Mobile Apps"
+title = "Mobile Apps develper"
 icon = "./config/assets/icons/mobile.svg"
 text = "Professional development of applications for iOS and Android."
 
 [[doing]]
 title = "Scripting"
 icon = "./config/assets/icons/code.svg"
-text = "Automation and task scripting using Python to enhance efficiency and productivity."
+text = "Automation and task scripting using Python to enhance efficiency and productivity. and hello
+"
 
 [[doing]]
 title = "UI/UX Designing"
