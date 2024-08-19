@@ -17,3 +17,8 @@ text = "Intuitive and visually appealing user interfaces and user experiences."
 title = "Web Development"
 icon = "./config/assets/icons/laptop-code.svg"
 text = "High-quality development of sites at the professional level."
+
+[[doing]]
+title = "NodeJS Development"
+icon = "./config/assets/icons/laptop-code.svg"
+text = "High-quality development of sites at the professional level."
