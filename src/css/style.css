@@ -806,22 +806,24 @@ main {
 }
 
 .clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* Create a responsive grid */
+  grid-auto-rows: min-content;
+  /* Rows will fit content size */
   gap: 15px;
-  margin: 0 -15px;
   padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  max-height: 100vh;
+  /* Set a max height for scrolling */
   scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+  overscroll-behavior: contain;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 25px;
 }
 
 .clients-item {
-  min-width: 50%;
   scroll-snap-align: start;
 }
 
