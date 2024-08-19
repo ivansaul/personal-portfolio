@@ -1,62 +1,57 @@
 ############## Education config #################
 #################################################
 [[education]]
-title = "High school of art and design"
-timeline = "2002 — 2004"
-description = "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
+title = "Higher Secondary Certificate at Gujarat Secondary and Higher Education Board (GSEB)"
+timeline = "June 2011 – May 2013"
+description = "Achieved a percentile of 82.20 in Higher Secondary Certificate exams, demonstrating strong academic performance in pre-university education."
 
 [[education]]
-title = "New york academy of art"
-timeline = "2006 — 2007"
-description = "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis.."
-
-[[education]]
-title = "University school of the arts"
-timeline = "2007 — 2008"
-description = "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+title = "Bachelor of Computer Engineering at Gujarat Technological University (GTU)"
+timeline = "July 2013 – June 2017"
+description = "Earned a Bachelor’s degree with a CGPA of 8.18, focusing on computer science principles and software development."
 
 
 ############## Experience config ################
 #################################################
 [[experience]]
-title = "Web designer"
-timeline = "2010 — 2013"
-description = "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+title = "Software Engineer at Cygnet Infotech Pvt. Ltd.| Ahmedabad, Gujarat"
+timeline = "July 2017 – August 2020"
+description = "Focused on research and development of blockchain and emerging technologies, creating proofs of concept to explore innovative solutions. Engaged in full stack development, building and enhancing web applications to deliver robust and scalable solutions. Implemented new features and optimized existing systems to improve performance. Collaborated with cross-functional teams to align technical approaches with project goals and client needs."
 
 [[experience]]
-title = "Art director"
-timeline = "2013 — 2015"
-description = "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+title = "Software Engineer at Capermint Technologies Pvt. Ltd. | Ahmedabad, Gujarat"
+timeline = "August 2020 – September 2021"
+description = "Specialized in MEAN stack development, driving the creation of robust web applications. Developed real-time gaming solutions using Socket.io, focusing on seamless game engine integration for real-money games. Leveraged expertise in both full-stack and game development to deliver engaging, high-performance gaming experiences, optimizing for scalability and real-time interactions."
 
 [[experience]]
-title = "Creative director"
-timeline = "2015 — Present"
-description = "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+title = "Software Engineer at The One Technologies | Ahmedabad, Gujarat"
+timeline = "October 2021 – March 2023"
+description = "I lead MEAN stack development projects, actively contributing to both frontend and backend tasks. My role includes optimizing database queries to enhance performance and efficiency, ensuring fast and reliable data access. I am responsible for designing and implementing scalable software solutions, managing the entire development lifecycle, and aligning technical outcomes with business objectives. My work involves close collaboration with cross-functional teams to deliver high-quality applications that meet client needs."
 
+[[experience]]
+title = "Software Engineer at VGD Technologies Pvt. Ltd. | Ahmedabad, Gujarat"
+timeline = "April 2023 – Present"
+description = "Currently leading the development of full-stack software solutions, actively contributing to both frontend and backend development. Architect scalable and robust systems while managing a team of developers to ensure high-quality code and timely project delivery. Engage directly with clients to understand requirements and align technical solutions with business objectives. Implement advanced DevOps practices to streamline deployment and improve system efficiency."
 
 ############## Skills config ####################
 #################################################
-[skills] 
+[skills]
 title = "My Skills"
 enabled = true
 show_bar = true
 show_value = true
 
 [[skill]]
-title = "Web design"
-value = "80%"
+title = "Frontend"
+value = "75%"
 
 [[skill]]
-title = "Graphic design"
-value = "70%"
-
-[[skill]]
-title = "Branding"
+title = "Backend"
 value = "90%"
 
 [[skill]]
-title = "WordPress"
-value = "50%"
+title = "DevOps"
+value = "60%"
 
 ############## Language config ##################
 #################################################
@@ -67,9 +62,9 @@ show_bar = true
 show_value = true
 
 [[language]]
-title = "Ingles"
-value = "60%"
+title = "English"
+value = "80%"
 
 [[language]]
-title = "French"
-value = "50%"
+title = "Hindi"
+value = "100%"
