@@ -829,8 +829,14 @@ main {
 
 .clients-item img {
   width: 100%;
+  filter: grayscale(0);
   transition: var(--transition-1);
 }
+
+.clients-item img:hover {
+  filter: grayscale(1);
+}
+
 
 
 
