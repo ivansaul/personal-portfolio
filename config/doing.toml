@@ -5,7 +5,7 @@ text = "Expert in crafting dynamic and responsive web interfaces using Angular, 
 
 [[doing]]
 title = "Backend Architecture"
-icon = "./config/assets/icons/compass.svg"
+icon = "./config/assets/icons/nodejs.svg"
 text = "Specializes in developing scalable server-side solutions with Node.js, Express.js, and NestJS. Proficient in using JavaScript, TypeScript, and Socket.io to build robust backend services and real-time applications."
 
 [[doing]]
