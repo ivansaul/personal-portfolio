@@ -1,24 +1,41 @@
 [[doing]]
-title = "Mobile Apps"
-icon = "./config/assets/icons/mobile.svg"
-text = "Professional development of applications for iOS and Android."
-
-[[doing]]
-title = "Scripting"
+title = "Frontend Engineering"
 icon = "./config/assets/icons/code.svg"
-text = "Automation and task scripting using Python to enhance efficiency and productivity."
+text = "Expert in crafting dynamic and responsive web interfaces using Angular, RxJS, HTML, CSS, JavaScript, and TypeScript. Adept at creating intuitive user experiences and ensuring cross-browser compatibility."
 
 [[doing]]
-title = "UI/UX Designing"
+title = "Backend Architecture"
 icon = "./config/assets/icons/compass.svg"
-text = "Intuitive and visually appealing user interfaces and user experiences."
+text = "Specializes in developing scalable server-side solutions with Node.js, Express.js, and NestJS. Proficient in using JavaScript, TypeScript, and Socket.io to build robust backend services and real-time applications."
 
 [[doing]]
-title = "Web Development"
+title = "Distributed Systems"
 icon = "./config/assets/icons/laptop-code.svg"
-text = "High-quality development of sites at the professional level."
+text = "Experienced in implementing distributed technologies such as Redis, RabbitMQ, and Kafka for managing real-time data and ensuring high availability and scalability of applications."
 
 [[doing]]
-title = "NodeJS Development"
+title = "Database Solutions"
 icon = "./config/assets/icons/laptop-code.svg"
-text = "High-quality development of sites at the professional level."
+text = "Skilled in managing and optimizing databases including MongoDB, MySQL, and PostgreSQL. Expertise in designing efficient data models and ensuring reliable data storage and retrieval."
+
+[[doing]]
+title = "Testing and Quality Assurance"
+icon = "./config/assets/icons/laptop-code.svg"
+text = "Proficient in employing testing frameworks such as Jest, Mocha, Chai, Jasmine, and Karma to ensure code quality and reliability through comprehensive unit and integration testing."
+
+[[doing]]
+title = "Project Management and Collaboration"
+icon = "./config/assets/icons/laptop-code.svg"
+text = "Utilizes project management tools like JIRA, Trello, and Basecamp to plan, track, and manage projects effectively, ensuring timely delivery and alignment with project goals."
+
+
+[[doing]]
+title = "DevOps and Continuous Integration/Delivery"
+icon = "./config/assets/icons/laptop-code.svg"
+text = "Proficient in DevOps practices using Docker, Kubernetes, GitLab CI/CD, and GitHub Actions to automate deployment pipelines, manage containerized applications, and enhance development workflows."
+
+
+[[doing]]
+title = "Cloud Infrastructure"
+icon = "./config/assets/icons/laptop-code.svg"
+text = "Experienced in leveraging cloud computing platforms such as AWS and Digital Ocean to deploy, manage, and scale applications, ensuring optimal performance and cost-efficiency."
