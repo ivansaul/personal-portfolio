@@ -808,32 +808,17 @@ main {
 .clients-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  /* Create a responsive grid */
-  grid-auto-rows: min-content;
-  overflow-y: auto;
-  /* Enable vertical scrolling */
-  max-height: 100vh;
-  /* Set a max height for scrolling */
-  scroll-behavior: smooth;
-  overscroll-behavior: contain;
-  scroll-snap-type: y mandatory;
-  scroll-padding: 25px;
+  gap: 20px;
 }
 
 .clients-item {
-  scroll-snap-align: start;
-  padding-top: 20px;
+  position: relative;
   padding-bottom: 20px;
 }
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
   transition: var(--transition-1);
-}
-
-.clients-item img:hover {
-  filter: grayscale(0);
 }
 
 
