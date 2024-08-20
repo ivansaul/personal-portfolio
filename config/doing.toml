@@ -1,6 +1,6 @@
 [[doing]]
 title = "Frontend Engineering"
-icon = "./config/assets/icons/code.svg"
+icon = "./config/assets/icons/laptop-code.svg"
 text = "Expert in crafting dynamic and responsive web interfaces using Angular, RxJS, HTML, CSS, JavaScript, and TypeScript. Adept at creating intuitive user experiences and ensuring cross-browser compatibility."
 
 [[doing]]
@@ -10,32 +10,32 @@ text = "Specializes in developing scalable server-side solutions with Node.js, E
 
 [[doing]]
 title = "Distributed Systems"
-icon = "./config/assets/icons/laptop-code.svg"
+icon = "./config/assets/icons/distributed.svg"
 text = "Experienced in implementing distributed technologies such as Redis, RabbitMQ, and Kafka for managing real-time data and ensuring high availability and scalability of applications."
 
 [[doing]]
 title = "Database Solutions"
-icon = "./config/assets/icons/laptop-code.svg"
+icon = "./config/assets/icons/database.svg"
 text = "Skilled in managing and optimizing databases including MongoDB, MySQL, and PostgreSQL. Expertise in designing efficient data models and ensuring reliable data storage and retrieval."
 
 [[doing]]
 title = "Testing and Quality Assurance"
-icon = "./config/assets/icons/laptop-code.svg"
+icon = "./config/assets/icons/quality.svg"
 text = "Proficient in employing testing frameworks such as Jest, Mocha, Chai, Jasmine, and Karma to ensure code quality and reliability through comprehensive unit and integration testing."
 
 [[doing]]
 title = "Project Management and Collaboration"
-icon = "./config/assets/icons/laptop-code.svg"
+icon = "./config/assets/icons/management.svg"
 text = "Utilizes project management tools like JIRA, Trello, and Basecamp to plan, track, and manage projects effectively, ensuring timely delivery and alignment with project goals."
 
 
 [[doing]]
 title = "DevOps and Continuous Integration/Delivery"
-icon = "./config/assets/icons/laptop-code.svg"
+icon = "./config/assets/icons/devops.svg"
 text = "Proficient in DevOps practices using Docker, Kubernetes, GitLab CI/CD, and GitHub Actions to automate deployment pipelines, manage containerized applications, and enhance development workflows."
 
 
 [[doing]]
 title = "Cloud Infrastructure"
-icon = "./config/assets/icons/laptop-code.svg"
+icon = "./config/assets/icons/cloud.svg"
 text = "Experienced in leveraging cloud computing platforms such as AWS and Digital Ocean to deploy, manage, and scale applications, ensuring optimal performance and cost-efficiency."
