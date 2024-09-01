@@ -64,11 +64,23 @@
 # image = "./config/assets/projects/project-6.png"
 # url = "https://github.com/ivansaul/flutter_todo_app#screenshots"
 
-# [[project]]
-# title = "Summary"
-# category = "Web development"
-# image = "./config/assets/projects/project-7.png"
-# url = "https://github.com/ivansaul/codigo_facilito_downloader"
+[[project]]
+title = "SEVA my e-biz"
+category = "Mobile development"
+image = "./config/assets/projects/myebiz.png"
+url = "https://play.google.com/store/apps/details?id=com.sevashop"
+
+[[project]]
+title = "SEVA MyMall"
+category = "Mobile development"
+image = "./config/assets/projects/mymall.png"
+url = "https://play.google.com/store/apps/details?id=com.sevabiz.mall"
+
+[[project]]
+title = "SEVA Republic"
+category = "Mobile development"
+image = "./config/assets/projects/sevarepublic.png"
+url = "https://play.google.com/store/apps/details?id=com.sevasathi"
 
 [[project]]
 title = "Uno Clash"
