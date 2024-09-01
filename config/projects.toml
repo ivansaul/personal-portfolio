@@ -76,11 +76,11 @@
 # image = "./config/assets/projects/project-8.jpg"
 # url = "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
 
-# [[project]]
-# title = "Arrival"
-# category = "Web development"
-# image = "./config/assets/projects/project-9.png"
-# url = "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
+[[project]]
+title = "Ludo Empire"
+category = "Game"
+image = "./config/assets/projects/ludoempire.png"
+url = "https://ludoempire.com"
 
 [[project]]
 title = "Cygnature"
