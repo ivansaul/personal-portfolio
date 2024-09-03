@@ -20,7 +20,7 @@ url = "https://play.google.com/store/apps/details?id=com.sevasathi"
 title = "Electronic Health Record(EHR)"
 category = "Web development"
 image = "./config/assets/projects/sesitelemedicina.png"
-url = "https://play.google.com/store/apps/details?id=com.aps.sessiviva&hl=en-IN"
+url = "https://beneficiario.telemedicina.sesivivamais.com.br/login"
 
 [[project]]
 title = "Uno Clash"
