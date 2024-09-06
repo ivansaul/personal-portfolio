@@ -1,0 +1,17 @@
+<app-border-article>
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+
+  <section class="about-text">
+    @for (about of aboutMe.aboutMe; track about) {
+    <p>{{ about }}</p>
+    }
+  </section>
+
+  <app-services [services]="aboutMe.services" />
+
+  <app-soft-skills [softSkills]="aboutMe.softSkills" />
+
+  <app-technologies [technologies]="aboutMe.technologies" />
+</app-border-article>

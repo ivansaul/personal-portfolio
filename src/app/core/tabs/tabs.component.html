@@ -1,0 +1,12 @@
+<ul class="navbar-list">
+  @for (item of tabs; track item.id) {
+  <li class="navbar-item" (click)="onTabChange(item)">
+    <button
+      class="navbar-link"
+      [class]="{ active: item.id === activeTab().id }"
+    >
+      {{ item.title }}
+    </button>
+  </li>
+  }
+</ul>

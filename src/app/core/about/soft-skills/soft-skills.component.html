@@ -1,0 +1,7 @@
+<h3 class="h3 softskills-title">Soft Skills</h3>
+
+<ul class="softskills-list">
+  @for (softSkill of softSkills(); track softSkill.title) {
+  <app-soft-skill-item [softSkill]="softSkill" />
+  }
+</ul>

@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+}
+
+@media (min-width: 1250px) {
+    :host {
+        justify-content: center;
+    }
+}

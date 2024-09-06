@@ -1,0 +1,28 @@
+:host {
+    min-width: 50%;
+    scroll-snap-align: start;
+}
+
+:host img {
+    width: 100%;
+    /* filter: grayscale(0); */
+    transition: var(--transition-1);
+}
+
+/* :host img:hover {
+    filter: grayscale(0);
+} */
+
+
+@media (min-width: 580px) {
+
+    :host {
+        min-width: calc(33.33% - 35px);
+    }
+}
+
+@media (min-width: 1024px) {
+    :host {
+        min-width: calc(25% - 38px);
+    }
+}

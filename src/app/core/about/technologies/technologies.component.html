@@ -1,0 +1,7 @@
+<h3 class="h3 clients-title">Tech Experience</h3>
+
+<ul class="clients-list has-scrollbar">
+  @for (item of technologies(); track item.src) {
+  <app-tech-item [item]="item" />
+  }
+</ul>
