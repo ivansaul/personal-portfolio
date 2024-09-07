@@ -1,5 +1,5 @@
 export interface TechItem {
-  link: string;
-  src: string;
-  alt: string;
+  link?: string;
+  image: string;
+  title: string;
 }

@@ -125,10 +125,6 @@
         border-radius: 30px;
     }
 
-    .avatar-box img {
-        width: 120px;
-    }
-
     .info-content .name {
         margin-bottom: 15px;
     }
@@ -189,10 +185,6 @@
     .sidebar-info_more {
         opacity: 1;
         visibility: visible;
-    }
-
-    .avatar-box img {
-        width: 150px;
     }
 
     .info-content .name {

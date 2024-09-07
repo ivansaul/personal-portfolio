@@ -3,21 +3,23 @@
     scroll-snap-align: start;
 }
 
-:host img {
-    width: 100%;
-    /* filter: grayscale(0); */
-    transition: var(--transition-1);
-}
-
 /* :host img:hover {
     filter: grayscale(0);
-} */
+    } */
 
+.h5 {
+    margin-top: 15px;
+    text-align: center;
+}
 
 @media (min-width: 580px) {
 
     :host {
         min-width: calc(33.33% - 35px);
+    }
+
+    .h5 {
+        margin-top: 10px;
     }
 }
 

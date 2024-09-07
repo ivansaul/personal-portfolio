@@ -1,10 +1,11 @@
 import { Component, input } from '@angular/core';
 import { TechItem } from './tech-item.model';
+import { ImageComponent } from '../../../../shared/image/image.component';
 
 @Component({
   selector: 'app-tech-item',
   standalone: true,
-  imports: [],
+  imports: [ImageComponent],
   templateUrl: './tech-item.component.html',
   styleUrl: './tech-item.component.css',
 })

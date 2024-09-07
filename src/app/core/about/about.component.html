@@ -3,15 +3,19 @@
     <h2 class="h2 article-title">About me</h2>
   </header>
 
+  @if(!(profile | async)){
+  <app-loader width="100" />
+  }
+
   <section class="about-text">
-    @for (about of aboutMe.aboutMe; track about) {
+    @for (about of (profile | async)?.presentation; track about) {
     <p>{{ about }}</p>
     }
   </section>
 
-  <app-services [services]="aboutMe.services" />
+  <app-services />
 
-  <app-soft-skills [softSkills]="aboutMe.softSkills" />
+  <app-soft-skills />
 
-  <app-technologies [technologies]="aboutMe.technologies" />
+  <app-technologies />
 </app-border-article>

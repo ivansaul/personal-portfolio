@@ -1,6 +1,11 @@
 <app-content-card>
   <figure class="softskills-avatar-box">
-    <img [src]="softSkill().image" [alt]="softSkill().image" width="60" />
+    <app-image
+      [width]="imageWidth"
+      loaderPadding="20"
+      [src]="softSkill().image"
+      [alt]="softSkill().image"
+    />
   </figure>
 
   <h4 class="h4 softskills-item-title">{{ softSkill().title }}</h4>

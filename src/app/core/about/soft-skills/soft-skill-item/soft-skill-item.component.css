@@ -25,16 +25,15 @@
     overflow: hidden;
 }
 
+.loader {
+    width: 60px;
+    height: 60px;
+}
 
 @media (min-width: 580px) {
-
     .softskills-avatar-box {
         transform: translate(30px, -30px);
         border-radius: 20px;
-    }
-
-    .softskills-avatar-box img {
-        width: 80px;
     }
 
     .softskills-item-title {
@@ -45,5 +44,10 @@
     .softskills-text {
         line-clamp: 2;
         -webkit-line-clamp: 2;
+    }
+
+    .loader {
+        width: 80px;
+        height: 80px;
     }
 }

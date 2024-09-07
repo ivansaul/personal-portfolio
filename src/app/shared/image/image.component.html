@@ -1,0 +1,15 @@
+@if (!isImageLoaded) {
+<app-loader [width]="width()" [padding]="loaderPadding()" />
+}
+
+<img
+  [class]="{ hidden: !isImageLoaded }"
+  [style]="{
+    width: width() + 'px',
+    height: height() ? height() + 'px' : 'auto'
+  }"
+  [src]="src()"
+  [alt]="alt()"
+  (load)="onImageLoad()"
+  (error)="onImageError()"
+/>

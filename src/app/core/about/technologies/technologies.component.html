@@ -1,7 +1,11 @@
 <h3 class="h3 clients-title">Tech Experience</h3>
 
+@if (!technologies.length) {
+<app-loader width="100" />
+}
+
 <ul class="clients-list has-scrollbar">
-  @for (item of technologies(); track item.src) {
+  @for (item of technologies; track item.image) {
   <app-tech-item [item]="item" />
   }
 </ul>

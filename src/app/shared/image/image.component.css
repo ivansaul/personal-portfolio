@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+    /* Hides the image initially until loaded */
+}
+
+img {
+    width: 100%;
+    margin: auto;
+    /* filter: grayscale(0); */
+    transition: var(--transition-1);
+}

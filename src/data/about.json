@@ -50,33 +50,33 @@
     "technologies": [
         {
             "link": "#",
-            "alt": "client logo",
-            "src": "images/logo-1-color.png"
+            "title": "client logo",
+            "image": "images/logo-1-color.png"
         },
         {
             "link": "#",
-            "alt": "client logo",
-            "src": "images/logo-2-color.png"
+            "title": "client logo",
+            "image": "images/logo-2-color.png"
         },
         {
             "link": "#",
-            "alt": "client logo",
-            "src": "images/logo-3-color.png"
+            "title": "client logo",
+            "image": "images/logo-3-color.png"
         },
         {
             "link": "#",
-            "alt": "client logo",
-            "src": "images/logo-4-color.png"
+            "title": "client logo",
+            "image": "images/logo-4-color.png"
         },
         {
             "link": "#",
-            "alt": "client logo",
-            "src": "images/logo-5-color.png"
+            "title": "client logo",
+            "image": "images/logo-5-color.png"
         },
         {
             "link": "#",
-            "alt": "client logo",
-            "src": "images/logo-6-color.png"
+            "title": "client logo",
+            "image": "images/logo-6-color.png"
         }
     ]
 }
