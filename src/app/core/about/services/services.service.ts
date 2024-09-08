@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
@@ -13,26 +13,35 @@ import { forkJoin, map, mergeMap, Observable } from 'rxjs';
 export class ServicesService {
   private servicesCollection: AngularFirestoreCollection<ServiceItem>;
 
+  services = signal<ServiceItem[]>([]);
+
   constructor(
     private firestore: AngularFirestore,
     private storage: AngularFireStorage
   ) {
     this.servicesCollection =
       this.firestore.collection<ServiceItem>('services');
+
+    this.getServices();
   }
 
-  getServices(): Observable<ServiceItem[]> {
-    return this.servicesCollection.valueChanges({ idField: 'id' }).pipe(
-      mergeMap((items: ServiceItem[]) => {
-        const updatedItems$ = items.map((item) =>
-          this.storage
-            .ref(item.image)
-            .getDownloadURL()
-            .pipe(map((url: string) => ({ ...item, image: url })))
-        );
+  getServices() {
+    this.servicesCollection
+      .valueChanges({ idField: 'id' })
+      .pipe(
+        mergeMap((items: ServiceItem[]) => {
+          const updatedItems$ = items.map((item) =>
+            this.storage
+              .ref(item.image)
+              .getDownloadURL()
+              .pipe(map((url: string) => ({ ...item, image: url })))
+          );
 
-        return forkJoin(updatedItems$);
-      })
-    );
+          return forkJoin(updatedItems$);
+        })
+      )
+      .subscribe((services) => {
+        this.services.set(services);
+      });
   }
 }

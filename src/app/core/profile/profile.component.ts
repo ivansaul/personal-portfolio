@@ -1,6 +1,8 @@
 import {
   Component,
+  computed,
   CUSTOM_ELEMENTS_SCHEMA,
+  effect,
   HostBinding,
   HostListener,
   inject,
@@ -19,6 +21,7 @@ import {
 } from '@coreui/angular';
 import { Title } from '@angular/platform-browser';
 import { ImageComponent } from '../../shared/image/image.component';
+import { LoaderComponent } from '../../shared/loader/loader.component';
 // import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
@@ -33,6 +36,7 @@ import { ImageComponent } from '../../shared/image/image.component';
     GridModule,
     UtilitiesModule,
     ImageComponent,
+    LoaderComponent,
   ],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css',
@@ -55,12 +59,17 @@ export class ProfileComponent implements OnInit {
     presentation: [],
   };
 
-  profile = signal<Profile>(this.initialProfileData);
+  profile = computed(() => {
+    const data = this.profileService.profile();
+    return data || this.initialProfileData;
+  });
 
   constructor() {
-    this.profileService.getProfile().subscribe((profile) => {
-      this.titleService.setTitle(`${profile.name} | Portfolio`);
-      this.profile.set(profile);
+    effect(() => {
+      const title = this.profile().name
+        ? `${this.profile().name} | Portfolio`
+        : 'Portfolio';
+      this.titleService.setTitle(title);
     });
   }
 

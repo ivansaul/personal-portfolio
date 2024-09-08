@@ -8,7 +8,7 @@
     width: width() + 'px',
     height: height() ? height() + 'px' : 'auto'
   }"
-  [src]="src()"
+  [attr.src]="src()"
   [alt]="alt()"
   (load)="onImageLoad()"
   (error)="onImageError()"

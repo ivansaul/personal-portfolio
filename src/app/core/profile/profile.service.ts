@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
@@ -13,14 +13,17 @@ import { AngularFireStorage } from '@angular/fire/compat/storage';
 export class ProfileService {
   private profileCollection: AngularFirestoreCollection<Profile>;
 
+  profile = signal<Profile | undefined>(undefined);
+
   constructor(
     private firestore: AngularFirestore,
     private storage: AngularFireStorage
   ) {
     this.profileCollection = this.firestore.collection<Profile>('profile');
+    this.getProfile().subscribe();
   }
 
-  getProfile(): Observable<Profile> {
+  getProfile() {
     return this.profileCollection.valueChanges({ idField: 'id' }).pipe(
       first(),
       map((items) => items[0]),
@@ -31,6 +34,9 @@ export class ProfileService {
           .pipe(
             map((fileURL) => {
               profile.avatar = fileURL;
+
+              this.profile.set(profile);
+
               return profile;
             })
           )

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { SoftSkillItem } from './soft-skill-item/soft-skill-item.model';
 import { SoftSkillItemComponent } from './soft-skill-item/soft-skill-item.component';
 import { SoftSkillsService } from './soft-skils.service';
@@ -13,23 +13,7 @@ import { LoaderComponent } from '../../../shared/loader/loader.component';
   styleUrl: './soft-skills.component.css',
 })
 export class SoftSkillsComponent {
-  softSkills: SoftSkillItem[] = [];
-
   softSkillsService = inject(SoftSkillsService);
 
-  subscription?: Subscription;
-
-  ngOnInit(): void {
-    this.subscription = this.softSkillsService
-      .getSoftSkills()
-      .subscribe((skills) => {
-        this.softSkills = skills;
-      });
-  }
-
-  ngOnDestroy(): void {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
-  }
+  softSkills = computed(() => this.softSkillsService.softSkills());
 }

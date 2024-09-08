@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ServicesComponent } from './services/services.component';
 import ABOUT_DATA from '../../../data/about.json';
@@ -25,8 +25,8 @@ import { LoaderComponent } from '../../shared/loader/loader.component';
 })
 export class AboutComponent {
   aboutMe: About = <About>ABOUT_DATA;
-
   profileService = inject(ProfileService);
-
-  profile = this.profileService.getProfile();
+  profile = computed(() => {
+    return this.profileService.profile();
+  });
 }
