@@ -1,8 +1,8 @@
 import { Component, HostListener, input, Renderer2 } from '@angular/core';
 import { SoftSkillItem } from './soft-skill-item.model';
-import { ContentCardComponent } from '../../../../shared/content-card/content-card.component';
-import { LoaderComponent } from '../../../../shared/loader/loader.component';
-import { ImageComponent } from '../../../../shared/image/image.component';
+import { ContentCardComponent } from '../../../../shared/ui/content-card/content-card.component';
+import { LoaderComponent } from '../../../../shared/ui/loader/loader.component';
+import { ImageComponent } from '../../../../shared/ui/image/image.component';
 
 @Component({
   selector: 'app-soft-skill-item',

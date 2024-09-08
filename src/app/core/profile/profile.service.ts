@@ -4,7 +4,7 @@ import {
   AngularFirestoreCollection,
 } from '@angular/fire/compat/firestore';
 import { Profile } from './profile.model';
-import { first, map, Observable, switchMap } from 'rxjs';
+import { first, map, switchMap } from 'rxjs';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
 
 @Injectable({

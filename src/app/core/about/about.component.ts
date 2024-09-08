@@ -1,13 +1,12 @@
 import { Component, computed, inject } from '@angular/core';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ServicesComponent } from './services/services.component';
-import ABOUT_DATA from '../../../data/about.json';
 import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
-import { BorderArticleComponent } from '../../shared/border-article/border-article.component';
+import { BorderArticleComponent } from '../../shared/ui/border-article/border-article.component';
 import { About } from './about.model';
 import { ProfileService } from '../profile/profile.service';
 import { AsyncPipe } from '@angular/common';
-import { LoaderComponent } from '../../shared/loader/loader.component';
+import { LoaderComponent } from '../../shared/ui/loader/loader.component';
 
 @Component({
   selector: 'app-about',
@@ -24,7 +23,6 @@ import { LoaderComponent } from '../../shared/loader/loader.component';
   styleUrl: './about.component.css',
 })
 export class AboutComponent {
-  aboutMe: About = <About>ABOUT_DATA;
   profileService = inject(ProfileService);
   profile = computed(() => {
     return this.profileService.profile();

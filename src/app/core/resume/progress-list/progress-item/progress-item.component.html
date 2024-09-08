@@ -1,0 +1,5 @@
+<div class="title-wrapper">
+  <h5 class="h5">{{ item().title }}</h5>
+  <data [value]="item().value | removeChar : '%'">{{ item().value }}</data>
+</div>
+<ui-progress [progress]="item().value | removeChar : '%'" />

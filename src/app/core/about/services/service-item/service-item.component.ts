@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { ServiceItem } from './service-item.model';
-import { ContentCardComponent } from '../../../../shared/content-card/content-card.component';
-import { ImageComponent } from '../../../../shared/image/image.component';
+import { ContentCardComponent } from '../../../../shared/ui/content-card/content-card.component';
+import { ImageComponent } from '../../../../shared/ui/image/image.component';
 
 @Component({
   selector: 'app-service-item',

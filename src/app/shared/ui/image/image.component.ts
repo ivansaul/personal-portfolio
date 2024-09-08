@@ -2,7 +2,7 @@ import { Component, input } from '@angular/core';
 import { LoaderComponent } from '../loader/loader.component';
 
 @Component({
-  selector: 'app-image',
+  selector: 'ui-image',
   standalone: true,
   imports: [LoaderComponent],
   templateUrl: './image.component.html',

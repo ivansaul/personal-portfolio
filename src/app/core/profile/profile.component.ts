@@ -20,8 +20,8 @@ import {
   UtilitiesModule,
 } from '@coreui/angular';
 import { Title } from '@angular/platform-browser';
-import { ImageComponent } from '../../shared/image/image.component';
-import { LoaderComponent } from '../../shared/loader/loader.component';
+import { ImageComponent } from '../../shared/ui/image/image.component';
+import { LoaderComponent } from '../../shared/ui/loader/loader.component';
 // import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({

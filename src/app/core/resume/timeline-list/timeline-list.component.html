@@ -1,0 +1,14 @@
+<div class="title-wrapper">
+  <ui-icon-box [icon]="icon()" />
+  <h3 class="h3">{{ title() }}</h3>
+</div>
+
+@if (!items().length) {
+<ui-loader width="100" />
+}
+
+<ol class="timeline-list">
+  @for (item of items(); track $index) {
+  <app-timeline-item [item]="item" />
+  }
+</ol>

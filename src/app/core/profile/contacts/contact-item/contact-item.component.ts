@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { ContactItem } from './contact-item.model';
-import { IconBoxComponent } from '../../../../shared/icon-box/icon-box.component';
+import { IconBoxComponent } from '../../../../shared/ui/icon-box/icon-box.component';
 
 @Component({
   selector: 'app-contact-item',

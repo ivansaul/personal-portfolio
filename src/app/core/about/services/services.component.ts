@@ -1,7 +1,7 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { ServiceItemComponent } from './service-item/service-item.component';
 import { ServicesService } from './services.service';
-import { LoaderComponent } from '../../../shared/loader/loader.component';
+import { LoaderComponent } from '../../../shared/ui/loader/loader.component';
 
 @Component({
   selector: 'app-services',

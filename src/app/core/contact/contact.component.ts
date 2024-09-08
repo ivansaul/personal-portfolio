@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BorderArticleComponent } from '../../shared/border-article/border-article.component';
+import { BorderArticleComponent } from '../../shared/ui/border-article/border-article.component';
 
 @Component({
   selector: 'app-contact',

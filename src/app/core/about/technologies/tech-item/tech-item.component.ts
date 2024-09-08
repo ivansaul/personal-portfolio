@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { TechItem } from './tech-item.model';
-import { ImageComponent } from '../../../../shared/image/image.component';
+import { ImageComponent } from '../../../../shared/ui/image/image.component';
 
 @Component({
   selector: 'app-tech-item',

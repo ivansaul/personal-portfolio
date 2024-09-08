@@ -1,0 +1,26 @@
+:host {
+    display: block;
+}
+
+:host:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.title-wrapper data {
+    color: var(--light-gray);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-300);
+}
+
+@media (min-width: 580px) {
+    :host:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}

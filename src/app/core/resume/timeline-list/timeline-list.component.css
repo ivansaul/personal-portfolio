@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.timeline-list {
+    font-size: var(--fs-6);
+    margin-left: 45px;
+}
+
+@media (min-width: 580px) {
+    .timeline-list {
+        margin-left: 65px;
+    }
+}

@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-icon-box',
+  selector: 'ui-icon-box',
   standalone: true,
   imports: [],
   templateUrl: './icon-box.component.html',
