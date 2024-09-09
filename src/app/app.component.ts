@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
   title = 'portfolio';
   tabOptions = inject(TAB_OPTIONS);
 
-  activeTab = this.tabOptions[1];
+  activeTab = this.tabOptions[2];
 
   ngOnInit(): void {}
 }

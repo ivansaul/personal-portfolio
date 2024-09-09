@@ -1,19 +1,17 @@
-<main>
-  <app-profile />
+<app-profile />
 
-  <div class="main-content">
-    <app-tabs [(activeTab)]="activeTab" />
+<div class="main-content">
+  <app-tabs [(activeTab)]="activeTab" />
 
-    @if (activeTab.id==='about') {
-    <app-about />
-    } @if (activeTab.id==='resume') {
-    <app-resume />
-    } @if (activeTab.id==='portfolio'){
-    <app-portfolio />
-    } @if (activeTab.id==='blog'){
-    <app-blog />
-    }@if (activeTab.id==='contact'){
-    <app-contact />
-    }
-  </div>
-</main>
+  @if (activeTab.id==='about') {
+  <app-about />
+  } @if (activeTab.id==='resume') {
+  <app-resume />
+  } @if (activeTab.id==='portfolio'){
+  <app-portfolio />
+  } @if (activeTab.id==='blog'){
+  <app-blog />
+  }@if (activeTab.id==='contact'){
+  <app-contact />
+  }
+</div>

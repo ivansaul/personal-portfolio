@@ -12,8 +12,13 @@
     text-align: center;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 450px) {
+    :host {
+        min-width: calc(33.33% - 10px);
+    }
+}
 
+@media (min-width: 580px) {
     :host {
         min-width: calc(33.33% - 35px);
     }
