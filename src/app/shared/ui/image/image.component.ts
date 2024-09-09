@@ -11,8 +11,7 @@ import { LoaderComponent } from '../loader/loader.component';
 export class ImageComponent {
   src = input.required<string>();
   alt = input<string>();
-  width = input<string>('60');
-  loaderWidth = input<string>('60');
+  width = input<string>('100%');
   height = input<string>();
   loaderPadding = input<string>('0');
 

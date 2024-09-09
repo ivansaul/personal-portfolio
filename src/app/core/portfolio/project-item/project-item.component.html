@@ -1,0 +1,13 @@
+<a [href]="item().url">
+  <figure class="project-img">
+    <div class="project-item-icon-box">
+      <ion-icon name="eye-outline"></ion-icon>
+    </div>
+
+    <ui-image [src]="item().image" [alt]="item().title" loaderPadding="10" />
+  </figure>
+
+  <h3 class="project-title">{{ item().title }}</h3>
+
+  <p class="project-category">{{ item().category }}</p>
+</a>

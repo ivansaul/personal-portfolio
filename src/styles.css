@@ -187,6 +187,7 @@ body {
 .article-title {
     position: relative;
     padding-bottom: 7px;
+    margin-bottom: 15px;
 }
 
 .article-title::after {
@@ -262,6 +263,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    .article-title {
+        padding-bottom: 20px;
+    }
+
     .has-scrollbar::-webkit-scrollbar-button {
         width: 100px;
     }

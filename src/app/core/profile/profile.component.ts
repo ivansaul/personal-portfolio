@@ -45,7 +45,7 @@ import { LoaderComponent } from '../../shared/ui/loader/loader.component';
 export class ProfileComponent implements OnInit {
   @HostBinding('class') hostClass = '';
 
-  imageWidth: string = '80';
+  imageWidth: string = '80px';
 
   profileService = inject(ProfileService);
   titleService = inject(Title);
