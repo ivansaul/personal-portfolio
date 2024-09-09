@@ -1,0 +1,43 @@
+<ul class="filter-list">
+  @for (category of categories(); track category.value) {
+  <li class="filter-item">
+    <button
+      [class]="{ active: category.value === selected()?.value }"
+      (click)="onClickCategory(category)"
+    >
+      {{ category.name }}
+    </button>
+  </li>
+  }
+</ul>
+
+<div class="filter-select-box">
+  <button
+    class="filter-select"
+    [class]="{
+      active: isDropdownOptionsVisible
+    }"
+    (click)="toggleCategoryOptions()"
+  >
+    <div class="select-value" data-select-value>
+      {{ selected()?.name || "Select category" }}
+    </div>
+
+    <div class="select-icon">
+      <ion-icon name="chevron-down"></ion-icon>
+    </div>
+  </button>
+
+  <ul class="select-list">
+    @for (category of categories(); track category.value) {
+    <li class="select-item">
+      <button
+        [class]="{ active: category.value === selected()?.value }"
+        (click)="onClickCategoryDropdown(category)"
+      >
+        {{ category.name }}
+      </button>
+    </li>
+    }
+  </ul>
+</div>

@@ -5,7 +5,7 @@ import {
 } from '@angular/fire/compat/firestore';
 import { ServiceItem } from './service-item/service-item.model';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
-import { forkJoin, map, mergeMap, Observable } from 'rxjs';
+import { forkJoin, map, mergeMap, Observable, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -29,7 +29,7 @@ export class ServicesService {
     this.servicesCollection
       .valueChanges({ idField: 'id' })
       .pipe(
-        mergeMap((items: ServiceItem[]) => {
+        switchMap((items: ServiceItem[]) => {
           const updatedItems$ = items.map((item) =>
             this.storage
               .ref(item.image)
