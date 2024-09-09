@@ -52,8 +52,6 @@ export class ProfileComponent implements OnInit {
   initialProfileData: Profile = {
     avatar: '',
     name: '',
-    contacts: [],
-    socials: [],
     title: '',
     presentation: [],
   };
@@ -62,6 +60,9 @@ export class ProfileComponent implements OnInit {
     const data = this.profileService.profile();
     return data || this.initialProfileData;
   });
+
+  contacts = computed(() => this.profileService.contacts());
+  socials = computed(() => this.profileService.socials());
 
   constructor() {
     effect(() => {
