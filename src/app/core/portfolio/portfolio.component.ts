@@ -11,6 +11,7 @@ import { CategoryFilterComponent } from '../../shared/ui/category-filter/categor
 import { CategoryFilter } from '../../shared/ui/category-filter/category-filter.model';
 import { PortfolioService } from './portfolio.service';
 import { ProjectItemComponent } from './project-item/project-item.component';
+import { LoaderComponent } from '../../shared/ui/loader/loader.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -19,6 +20,7 @@ import { ProjectItemComponent } from './project-item/project-item.component';
     BorderArticleComponent,
     CategoryFilterComponent,
     ProjectItemComponent,
+    LoaderComponent,
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',

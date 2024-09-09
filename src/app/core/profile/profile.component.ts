@@ -22,7 +22,6 @@ import {
 import { Title } from '@angular/platform-browser';
 import { ImageComponent } from '../../shared/ui/image/image.component';
 import { LoaderComponent } from '../../shared/ui/loader/loader.component';
-// import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-profile',
