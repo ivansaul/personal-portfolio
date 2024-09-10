@@ -9,5 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class LoaderComponent {
   @Input() width: string = '80';
+  @Input() height: string = '80';
   @Input() padding: string = '0';
 }

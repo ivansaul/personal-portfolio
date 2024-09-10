@@ -1,14 +1,17 @@
-.hidden {
-    display: none;
-    /* Hides the image initially until loaded */
-}
-
 img {
     width: 100%;
     margin: auto;
-    transition: var(--transition-1);
+    transition: transform var(--transition-1), filter var(--transition-3);
+}
+
+.blur {
+    filter: blur(20px);
 }
 
 img.scaled {
     transform: scale(1.1);
+}
+
+img.loaded {
+    filter: blur(0);
 }

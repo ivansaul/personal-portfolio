@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { LoaderComponent } from '../loader/loader.component';
 
 @Component({
@@ -13,9 +13,12 @@ export class ImageComponent {
   alt = input<string>();
   width = input<string>('100%');
   height = input<string>();
-  loaderPadding = input<string>('0');
   scale = input<boolean>(false);
   isImageLoaded = false; // Tracks whether the image has finished loading
+
+  loaderPadding = input<string>('0');
+  @Input() loaderWidth?: string;
+  @Input() loaderHeight?: string;
 
   // Triggered when the image is successfully loaded
   onImageLoad(): void {
