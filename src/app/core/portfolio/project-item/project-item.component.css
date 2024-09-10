@@ -67,18 +67,6 @@
     --ionicon-stroke-width: 50px;
 }
 
-.project-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-1);
-}
-
-:host>a:hover img {
-    transform: scale(1.1);
-}
-
-
 .project-title,
 .project-category {
     margin-left: 10px;

@@ -18,4 +18,6 @@ import { ImageComponent } from '../../../shared/ui/image/image.component';
 })
 export class ProjectItemComponent {
   item = input.required<ProjectItem>();
+
+  makeImageScale = false;
 }

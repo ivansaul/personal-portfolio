@@ -6,6 +6,9 @@
 img {
     width: 100%;
     margin: auto;
-    /* filter: grayscale(0); */
     transition: var(--transition-1);
+}
+
+img.scaled {
+    transform: scale(1.1);
 }

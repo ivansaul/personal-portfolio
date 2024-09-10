@@ -3,10 +3,10 @@
 }
 
 <img
-  [class]="{ hidden: !isImageLoaded }"
+  [class]="{ hidden: !isImageLoaded, scaled: scale() }"
   [style]="{
     width: width() + 'px',
-    height: height() ? height() + 'px' : 'auto'
+    height: height() ? height() + 'px' : 'auto',
   }"
   [attr.src]="src()"
   [alt]="alt()"

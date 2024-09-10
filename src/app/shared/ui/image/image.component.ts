@@ -14,7 +14,7 @@ export class ImageComponent {
   width = input<string>('100%');
   height = input<string>();
   loaderPadding = input<string>('0');
-
+  scale = input<boolean>(false);
   isImageLoaded = false; // Tracks whether the image has finished loading
 
   // Triggered when the image is successfully loaded
