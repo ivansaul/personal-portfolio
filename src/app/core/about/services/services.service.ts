@@ -5,7 +5,7 @@ import {
 } from '@angular/fire/compat/firestore';
 import { ServiceItem } from './service-item/service-item.model';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
-import { forkJoin, map, mergeMap, Observable, switchMap } from 'rxjs';
+import { forkJoin, map, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',

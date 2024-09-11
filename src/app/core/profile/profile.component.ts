@@ -7,36 +7,18 @@ import {
   HostListener,
   inject,
   OnInit,
-  signal,
 } from '@angular/core';
 import { ContactsComponent } from './contacts/contacts.component';
 import { SocialsComponent } from './socials/socials.component';
-import { AsyncPipe, JsonPipe } from '@angular/common';
 import { ProfileService } from './profile.service';
 import { Profile } from './profile.model';
-import {
-  GridModule,
-  PlaceholderModule,
-  UtilitiesModule,
-} from '@coreui/angular';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { ImageComponent } from '../../shared/ui/image/image.component';
-import { LoaderComponent } from '../../shared/ui/loader/loader.component';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [
-    ContactsComponent,
-    SocialsComponent,
-    AsyncPipe,
-    JsonPipe,
-    PlaceholderModule,
-    GridModule,
-    UtilitiesModule,
-    ImageComponent,
-    LoaderComponent,
-  ],
+  imports: [ContactsComponent, SocialsComponent, ImageComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -48,6 +30,7 @@ export class ProfileComponent implements OnInit {
 
   profileService = inject(ProfileService);
   titleService = inject(Title);
+  metaService = inject(Meta);
 
   initialProfileData: Profile = {
     avatar: '',
@@ -70,6 +53,11 @@ export class ProfileComponent implements OnInit {
         ? `${this.profile().name} | Portfolio`
         : 'Portfolio';
       this.titleService.setTitle(title);
+
+      this.metaService.updateTag({
+        name: 'description',
+        content: this.profile().presentation.join(' '),
+      });
     });
   }
 

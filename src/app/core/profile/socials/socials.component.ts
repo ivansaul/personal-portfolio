@@ -1,4 +1,4 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { SocialItem } from './social-item/social-item.model';
 import { SocialItemComponent } from './social-item/social-item.component';
 
@@ -8,7 +8,6 @@ import { SocialItemComponent } from './social-item/social-item.component';
   imports: [SocialItemComponent],
   templateUrl: './socials.component.html',
   styleUrl: './socials.component.css',
-  schemas: [],
 })
 export class SocialsComponent {
   socials = input.required<SocialItem[]>();

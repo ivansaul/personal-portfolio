@@ -14,7 +14,9 @@
 
   <ul class="project-list">
     @for (item of filteredProjects(); track item.title) {
-    <app-project-item [item]="item" />
+    <li>
+      <app-project-item [item]="item" />
+    </li>
     }
   </ul>
 </ui-border-article>

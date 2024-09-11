@@ -27,7 +27,6 @@ export class ImageComponent {
 
   // Triggered if there is an error loading the image
   onImageError(): void {
-    console.error('Image failed to load.');
     this.isImageLoaded = false;
   }
 }

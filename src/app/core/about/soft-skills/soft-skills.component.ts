@@ -1,8 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
-import { SoftSkillItem } from './soft-skill-item/soft-skill-item.model';
 import { SoftSkillItemComponent } from './soft-skill-item/soft-skill-item.component';
 import { SoftSkillsService } from './soft-skils.service';
-import { Subscription } from 'rxjs';
 import { LoaderComponent } from '../../../shared/ui/loader/loader.component';
 
 @Component({

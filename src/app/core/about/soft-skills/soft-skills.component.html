@@ -6,6 +6,8 @@
 
 <ul class="softskills-list">
   @for (softSkill of softSkills(); track softSkill.title) {
-  <app-soft-skill-item [softSkill]="softSkill" />
+  <li>
+    <app-soft-skill-item [softSkill]="softSkill" />
+  </li>
   }
 </ul>

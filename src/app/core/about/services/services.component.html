@@ -6,6 +6,8 @@
 
 <ul class="service-list">
   @for (item of services(); track item.title) {
-  <app-service-item [service]="item" />
+  <li>
+    <app-service-item [service]="item" />
+  </li>
   }
 </ul>

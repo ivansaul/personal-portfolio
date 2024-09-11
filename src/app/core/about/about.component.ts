@@ -3,9 +3,7 @@ import { TechnologiesComponent } from './technologies/technologies.component';
 import { ServicesComponent } from './services/services.component';
 import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
 import { BorderArticleComponent } from '../../shared/ui/border-article/border-article.component';
-import { About } from './about.model';
 import { ProfileService } from '../profile/profile.service';
-import { AsyncPipe } from '@angular/common';
 import { LoaderComponent } from '../../shared/ui/loader/loader.component';
 
 @Component({
@@ -17,7 +15,6 @@ import { LoaderComponent } from '../../shared/ui/loader/loader.component';
     SoftSkillsComponent,
     BorderArticleComponent,
     LoaderComponent,
-    AsyncPipe,
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',

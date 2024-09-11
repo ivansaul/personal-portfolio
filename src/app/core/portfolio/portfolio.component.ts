@@ -1,11 +1,4 @@
-import {
-  Component,
-  computed,
-  CUSTOM_ELEMENTS_SCHEMA,
-  effect,
-  inject,
-  signal,
-} from '@angular/core';
+import { Component, computed, effect, inject, signal } from '@angular/core';
 import { BorderArticleComponent } from '../../shared/ui/border-article/border-article.component';
 import { CategoryFilterComponent } from '../../shared/ui/category-filter/category-filter.component';
 import { CategoryFilter } from '../../shared/ui/category-filter/category-filter.model';
@@ -24,7 +17,6 @@ import { LoaderComponent } from '../../shared/ui/loader/loader.component';
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PortfolioComponent {
   categories: CategoryFilter[] = [];

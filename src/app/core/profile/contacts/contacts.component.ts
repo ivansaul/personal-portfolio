@@ -1,4 +1,4 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ContactItemComponent } from './contact-item/contact-item.component';
 import { ContactItem } from './contact-item/contact-item.model';
 

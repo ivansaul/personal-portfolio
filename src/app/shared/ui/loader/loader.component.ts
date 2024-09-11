@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ui-loader',
@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   imports: [],
   templateUrl: './loader.component.html',
   styleUrl: './loader.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoaderComponent {
   @Input() width: string = '80';

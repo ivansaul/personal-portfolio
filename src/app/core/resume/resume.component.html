@@ -3,6 +3,7 @@
     <h2 class="h2 article-title">Resume</h2>
   </header>
 
+  @defer (on idle) {
   <app-timeline-list
     icon="briefcase-outline"
     title="Experience"
@@ -17,4 +18,5 @@
 
   <app-progress-list title="Languages" [items]="languages()" />
   <app-progress-list title="My Skills" [items]="techSkills()" />
+  }
 </ui-border-article>
