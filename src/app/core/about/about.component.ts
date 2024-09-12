@@ -18,6 +18,7 @@ import { LoaderComponent } from '../../shared/ui/loader/loader.component';
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
+  providers: [ProfileService],
 })
 export class AboutComponent {
   profileService = inject(ProfileService);

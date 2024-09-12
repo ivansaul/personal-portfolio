@@ -6,9 +6,7 @@ import {
 import { ProgressItem } from './progress-list/progress-item/progress-item.model';
 import { TimelineItem } from './timeline-list/timeline-item/timeline-item.model';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class ResumeService {
   private educationsCollection: AngularFirestoreCollection<TimelineItem>;
   private experiencesCollection: AngularFirestoreCollection<TimelineItem>;

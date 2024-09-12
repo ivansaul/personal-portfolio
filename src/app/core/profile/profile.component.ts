@@ -22,6 +22,7 @@ import { ImageComponent } from '../../shared/ui/image/image.component';
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [ProfileService],
 })
 export class ProfileComponent implements OnInit {
   @HostBinding('class') hostClass = '';

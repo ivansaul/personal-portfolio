@@ -23,11 +23,11 @@ export const routes: Routes = [
         (m) => m.PortfolioComponent
       ),
   },
-  {
-    path: 'blog',
-    loadComponent: () =>
-      import('./core/blog/blog.component').then((m) => m.BlogComponent),
-  },
+  // {
+  //   path: 'blog',
+  //   loadComponent: () =>
+  //     import('./core/blog/blog.component').then((m) => m.BlogComponent),
+  // },
   {
     path: 'contact',
     loadComponent: () =>

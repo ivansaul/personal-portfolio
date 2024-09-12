@@ -9,6 +9,8 @@
 
 <ol class="timeline-list">
   @for (item of items(); track $index) {
-  <app-timeline-item [item]="item" />
+  <li>
+    <app-timeline-item [item]="item" />
+  </li>
   }
 </ol>

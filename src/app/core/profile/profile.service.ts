@@ -9,9 +9,7 @@ import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { ContactItem } from './contacts/contact-item/contact-item.model';
 import { SocialItem } from './socials/social-item/social-item.model';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class ProfileService {
   private profileCollection: AngularFirestoreCollection<Profile>;
   private contactsCollection: AngularFirestoreCollection<ContactItem>;

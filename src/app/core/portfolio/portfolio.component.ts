@@ -17,6 +17,7 @@ import { LoaderComponent } from '../../shared/ui/loader/loader.component';
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
+  providers: [PortfolioService],
 })
 export class PortfolioComponent {
   categories: CategoryFilter[] = [];

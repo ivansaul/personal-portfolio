@@ -9,7 +9,7 @@ export const TabOptions: Tab[] = [
   { id: 'about', title: 'About' },
   { id: 'resume', title: 'Resume' },
   { id: 'portfolio', title: 'Portfolio' },
-  { id: 'blog', title: 'Blog' },
+  // { id: 'blog', title: 'Blog' },
   { id: 'contact', title: 'Contact' },
 ];
 

@@ -13,8 +13,10 @@
     <li>
       <app-project-item [item]="item" />
     </li>
-    }@empty {
-    <ui-loader width="100" />
     }
   </ul>
+
+  @if(!filteredProjects().length) {
+  <ui-loader width="100" />
+  }
 </ui-border-article>

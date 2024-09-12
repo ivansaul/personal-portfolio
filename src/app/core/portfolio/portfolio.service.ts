@@ -7,9 +7,7 @@ import { ProjectItem } from './project-item.model';
 import { forkJoin, map, switchMap } from 'rxjs';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class PortfolioService {
   private projectsCollection: AngularFirestoreCollection<ProjectItem>;
 

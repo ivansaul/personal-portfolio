@@ -14,6 +14,7 @@ import { TimelineListComponent } from './timeline-list/timeline-list.component';
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css',
+  providers: [ResumeService],
 })
 export class ResumeComponent {
   resumeService = inject(ResumeService);
