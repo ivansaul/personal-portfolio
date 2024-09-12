@@ -3,10 +3,6 @@
     <h2 class="h2 article-title">Portfolio</h2>
   </header>
 
-  @if(!filteredProjects().length){
-  <ui-loader width="100" />
-  }
-
   <ui-category-filter
     [categories]="categories"
     [(selected)]="selectedCategory"
@@ -17,6 +13,8 @@
     <li>
       <app-project-item [item]="item" />
     </li>
+    }@empty {
+    <ui-loader width="100" />
     }
   </ul>
 </ui-border-article>
