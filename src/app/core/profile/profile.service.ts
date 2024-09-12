@@ -15,7 +15,18 @@ export class ProfileService {
   private contactsCollection: AngularFirestoreCollection<ContactItem>;
   private socialsCollection: AngularFirestoreCollection<SocialItem>;
 
-  profile = signal<Profile | undefined>(undefined);
+  initialProfileData: Profile = {
+    avatar: '',
+    name: '',
+    title: '',
+    presentation: [],
+    googleMap: '',
+  };
+
+  private profileData = signal<Profile>(this.initialProfileData);
+
+  profile = this.profileData.asReadonly();
+
   contacts = signal<ContactItem[]>([]);
   socials = signal<SocialItem[]>([]);
 
@@ -28,30 +39,33 @@ export class ProfileService {
       this.firestore.collection<ContactItem>('contacts');
     this.socialsCollection = this.firestore.collection<SocialItem>('socials');
 
-    this.getProfile().subscribe();
+    this.getProfile();
     this.getContacts();
     this.getSocials();
   }
 
   getProfile() {
-    return this.profileCollection.valueChanges({ idField: 'id' }).pipe(
-      first(),
-      map((items) => items[0]),
-      switchMap((profile: Profile) =>
-        this.storage
-          .ref(profile.avatar)
-          .getDownloadURL()
-          .pipe(
-            map((fileURL) => {
-              profile.avatar = fileURL;
+    this.profileCollection
+      .valueChanges({ idField: 'id' })
+      .pipe(
+        first(),
+        map((items) => items[0]),
+        switchMap((profile: Profile) =>
+          this.storage
+            .ref(profile.avatar)
+            .getDownloadURL()
+            .pipe(
+              map((fileURL) => {
+                profile.avatar = fileURL;
 
-              this.profile.set(profile);
+                this.profileData.set(profile);
 
-              return profile;
-            })
-          )
+                return profile;
+              })
+            )
+        )
       )
-    );
+      .subscribe();
   }
 
   getContacts() {

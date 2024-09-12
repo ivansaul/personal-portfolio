@@ -52,7 +52,6 @@
     border-radius: 8px;
 }
 
-
 .info_more-btn {
     position: absolute;
     top: -15px;
@@ -104,6 +103,7 @@
     margin: 16px 0;
 }
 
+/* Media Queries */
 @media (min-width: 580px) {
     :host {
         width: 520px;

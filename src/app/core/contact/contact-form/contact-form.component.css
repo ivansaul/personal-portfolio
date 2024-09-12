@@ -1,0 +1,28 @@
+:host {
+    margin-bottom: 10px;
+}
+
+.form-title {
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 580px) {
+    .input-wrapper {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .input-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

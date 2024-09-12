@@ -4,4 +4,5 @@ export interface Profile {
   name: string;
   title: string;
   presentation: string[];
+  googleMap: string;
 }

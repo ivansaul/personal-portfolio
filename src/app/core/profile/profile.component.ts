@@ -33,18 +33,7 @@ export class ProfileComponent implements OnInit {
   titleService = inject(Title);
   metaService = inject(Meta);
 
-  initialProfileData: Profile = {
-    avatar: '',
-    name: '',
-    title: '',
-    presentation: [],
-  };
-
-  profile = computed(() => {
-    const data = this.profileService.profile();
-    return data || this.initialProfileData;
-  });
-
+  profile = this.profileService.profile;
   contacts = computed(() => this.profileService.contacts());
   socials = computed(() => this.profileService.socials());
 

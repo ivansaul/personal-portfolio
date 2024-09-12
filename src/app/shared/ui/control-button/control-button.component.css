@@ -1,0 +1,71 @@
+:host {
+    position: relative;
+    width: 100%;
+    background: var(--border-gradient-onyx);
+    color: var(--orange-yellow-crayola);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 20px;
+    border-radius: 14px;
+    font-size: var(--fs-6);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+    z-index: 1;
+    transition: var(--transition-1);
+}
+
+:host:before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+    transition: var(--transition-1);
+}
+
+:host ion-icon {
+    font-size: 16px;
+}
+
+:host:hover {
+    background: var(--bg-gradient-yellow-1);
+}
+
+:host:hover::before {
+    background: var(--bg-gradient-yellow-2);
+}
+
+:host:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+:host:disabled:hover {
+    background: var(--border-gradient-onyx);
+}
+
+:host:disabled:hover::before {
+    background: var(--bg-gradient-jet);
+}
+
+
+@media (min-width: 580px) {
+    :host {
+        --fs-6: 16px;
+        padding: 16px 20px;
+    }
+
+    :host ion-icon {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    :host {
+        width: max-content;
+        margin-left: auto;
+    }
+}
