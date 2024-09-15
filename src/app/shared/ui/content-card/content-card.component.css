@@ -2,8 +2,7 @@
     display: block;
     position: relative;
     background: var(--border-gradient-onyx);
-    padding: 15px;
-    padding-top: 45px;
+    padding: 20px;
     border-radius: 14px;
     box-shadow: var(--shadow-2);
     cursor: pointer;

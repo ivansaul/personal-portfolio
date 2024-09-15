@@ -1,8 +1,9 @@
-import { Component, effect, inject, OnInit } from '@angular/core';
+import { Component, effect, inject } from '@angular/core';
 import { BorderArticleComponent } from '../../shared/ui/border-article/border-article.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProfileService } from '../profile/profile.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,9 +11,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   imports: [BorderArticleComponent, ContactFormComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
-  providers: [ProfileService],
+  providers: [ProfileService, ContactService],
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   private profileService = inject(ProfileService);
   private sanitizer = inject(DomSanitizer);
   profile = this.profileService.profile;
@@ -21,12 +22,9 @@ export class ContactComponent implements OnInit {
 
   constructor() {
     effect(() => {
-      console.log(this.profile());
       this.safeGoogleMapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
         this.profile().googleMap
       );
     });
   }
-
-  ngOnInit(): void {}
 }

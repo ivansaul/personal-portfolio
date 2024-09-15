@@ -2,6 +2,11 @@
     margin-bottom: 25px;
 }
 
+ui-content-card {
+    padding-top: 45px;
+
+}
+
 .softskills-avatar-box {
     position: absolute;
     top: 0;

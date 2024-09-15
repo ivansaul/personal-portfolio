@@ -223,6 +223,10 @@ body {
     width: 20px;
 }
 
+.has-scrollbar::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 /*-----------------------------------*\
     #RESPONSIVE
 \*-----------------------------------*/

@@ -1,33 +1,82 @@
+@if (isSubmitting && isSubmitted) {
+<ui-loader height="150" />
+} @else if (!isSubmitted) {
 <h3 class="h3 form-title">Contact Form</h3>
-
-<form action="#" class="form" data-form>
-  <div class="input-wrapper">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form">
+  <div class="control-wrapper">
     <input
       uiInput
       type="text"
-      name="fullname"
+      name="name"
       placeholder="Full name"
-      required
+      formControlName="name"
     />
-
-    <input
-      uiInput
-      type="email"
-      name="email"
-      placeholder="Email address"
-      required
-    />
+    <p class="error-message" [class.show]="isNameInvalid">
+      Please enter your full name.
+    </p>
   </div>
 
-  <textarea
-    uiInput
-    name="message"
-    placeholder="Your Message"
-    required
-  ></textarea>
+  <div class="input-wrapper">
+    <div>
+      <input
+        uiInput
+        type="email"
+        name="email"
+        placeholder="Email address"
+        formControlName="email"
+      />
+      <p class="error-message" [class.show]="isEmailInvalid">
+        Please enter a valid email address.
+      </p>
+    </div>
+    <div>
+      <input
+        uiInput
+        type="tel"
+        name="mobile"
+        placeholder="Mobile Number"
+        formControlName="mobile"
+      />
+      <p class="error-message" [class.show]="isMobileInvalid">
+        Please enter a valid mobile number.
+      </p>
+    </div>
+  </div>
 
-  <button uiButton type="submit" disabled>
+  <div class="control-wrapper">
+    <textarea
+      class="has-scrollbar"
+      uiInput
+      name="message"
+      placeholder="Your Message"
+      formControlName="message"
+    ></textarea>
+    <p class="error-message" [class.show]="isMessageInvalid">
+      Message can't be empty.
+    </p>
+  </div>
+
+  <button uiButton type="submit" [disabled]="!contactForm.valid">
     <ion-icon name="paper-plane"></ion-icon>
     <span>Send Message</span>
   </button>
 </form>
+} @else{ @if (isServerError) {
+<div class="thank-you-message">
+  <h1>Oops!</h1>
+  <p>Something didn’t go as planned.</p>
+  <p>
+    Please give it another try after a little while. Thank you for your
+    patience, and sorry for the hiccup!
+  </p>
+</div>
+} @else {
+<div class="thank-you-message">
+  <h1>Thank You!</h1>
+  <p>Thank you for your interest in my services.</p>
+  <p>
+    I have received your message and will be in touch with you shortly to
+    discuss further details.
+  </p>
+</div>
+} }

@@ -6,6 +6,29 @@
     margin-bottom: 20px;
 }
 
+.control-wrapper {
+    margin-bottom: 25px;
+}
+
+.error-message {
+    margin-top: 0px;
+
+    padding-left: 15px;
+    color: var(--bittersweet-shimmer);
+    font-size: small;
+    transition: opacity 0.5s ease, max-height 0.5s ease, margin-top 0.5s ease;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.error-message.show {
+    margin-top: 10px;
+    opacity: 1;
+    max-height: 100%;
+}
+
+
 .input-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -13,9 +36,44 @@
     margin-bottom: 25px;
 }
 
+
+/* Define keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.thank-you-message {
+    text-align: center;
+    padding: 20px;
+    background: var(--eerie-black-2);
+    border: 1px solid var(--jet);
+    border-radius: 20px;
+    animation: fadeIn 1s ease-in-out;
+    /* Apply fade-in animation */
+
+}
+
+.thank-you-message h1 {
+    color: var(--orange-yellow-crayola);
+}
+
+.thank-you-message p {
+    color: var(--white-1);
+}
+
 @media (min-width: 580px) {
     .input-wrapper {
         gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .control-wrapper {
         margin-bottom: 30px;
     }
 }

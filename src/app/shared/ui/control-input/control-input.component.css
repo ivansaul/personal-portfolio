@@ -21,14 +21,13 @@ textarea:host {
     height: 120px;
     max-height: 200px;
     resize: vertical;
-    margin-bottom: 25px;
 }
 
 textarea:host::-webkit-resizer {
     display: none;
 }
 
-:host:focus:invalid {
+:host:focus.ng-dirty.ng-invalid {
     border-color: var(--bittersweet-shimmer);
 }
 
@@ -36,9 +35,4 @@ textarea:host::-webkit-resizer {
     :host {
         padding: 15px 20px;
     }
-
-    textarea:host {
-        margin-bottom: 30px;
-    }
-
 }

@@ -7,6 +7,10 @@
     margin-bottom: 15px;
 }
 
+p {
+    animation: fade 1.5s ease backwards;
+}
+
 .about-text {
     color: var(--light-gray);
     font-size: var(--fs-6);
