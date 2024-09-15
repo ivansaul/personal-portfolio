@@ -1,0 +1,41 @@
+name: Deploy Angular to GitHub Pages
+
+on:
+  push:
+    branches:
+      - angular
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Replace Firebase placeholders
+        run: |
+          sed -i "s/{{FIREBASE_API_KEY}}/${{secrets.FIREBASE_API_KEY}}/g" src/environments/environment.ts
+          sed -i "s/{{FIREBASE_AUTH_DOMAIN}}/${{secrets.FIREBASE_AUTH_DOMAIN}}/g" src/environments/environment.ts
+          sed -i "s/{{FIREBASE_DATABASE_URL}}/${{secrets.FIREBASE_DATABASE_URL}}/g" src/environments/environment.ts
+          sed -i "s/{{FIREBASE_PROJECT_ID}}/${{secrets.FIREBASE_PROJECT_ID}}/g" src/environments/environment.ts
+          sed -i "s/{{FIREBASE_STORAGE_BUCKET}}/${{secrets.FIREBASE_STORAGE_BUCKET}}/g" src/environments/environment.ts
+          sed -i "s/{{FIREBASE_MESSAGING_SENDER_ID}}/${{secrets.FIREBASE_MESSAGING_SENDER_ID}}/g" src/environments/environment.ts
+          sed -i "s/{{FIREBASE_APP_ID}}/${{secrets.FIREBASE_APP_ID}}/g" src/environments/environment.ts
+
+      - name: Build Angular app
+        run: npm run build -- --configuration=production
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/portfolio/browser
