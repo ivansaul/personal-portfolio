@@ -34,6 +34,15 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration=production
 
+      - name: Create dynamic 404.html for GitHub Pages
+        run: |
+          echo "<!DOCTYPE html>" > dist/404.html
+          echo "<html>" >> dist/404.html
+          echo "<head>" >> dist/404.html
+          echo "<meta http-equiv=\"refresh\" content=\"0; url=./index.html\" />" >> dist/404.html
+          echo "</head>" >> dist/404.html
+          echo "</html>" >> dist/404.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
