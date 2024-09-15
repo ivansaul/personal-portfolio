@@ -1,12 +1,11 @@
 export const environment = {
-  production: false,
   firebaseConfig: {
-    apiKey: 'AIzaSyCzJz2Z-VUPYm06kI8JgZj-J8yj2EqtQ5A',
-    authDomain: 'appoint-me-280511.firebaseapp.com',
-    databaseURL: 'https://appoint-me-280511.firebaseio.com',
-    projectId: 'appoint-me-280511',
-    storageBucket: 'appoint-me-280511.appspot.com',
-    messagingSenderId: '168295145149',
-    appId: '1:168295145149:web:093bba90cbbf499a43e1d4',
+    apiKey: '{{FIREBASE_API_KEY}}',
+    authDomain: '{{FIREBASE_AUTH_DOMAIN}}',
+    databaseURL: '{{FIREBASE_DATABASE_URL}}',
+    projectId: '{{FIREBASE_PROJECT_ID}}',
+    storageBucket: '{{FIREBASE_STORAGE_BUCKET}}',
+    messagingSenderId: '{{FIREBASE_MESSAGING_SENDER_ID}}',
+    appId: '{{FIREBASE_APP_ID}}',
   },
 };
