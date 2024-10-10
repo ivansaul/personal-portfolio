@@ -1,0 +1,21 @@
+<ui-border-article>
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+
+  @if(!(profile())){
+  <ui-loader width="100" />
+  }
+
+  <section class="about-text">
+    @for (about of (profile()).presentation; track about) {
+    <p>{{ about }}</p>
+    }
+  </section>
+
+  @defer (on idle) {
+  <app-services />
+  <app-soft-skills />
+  <app-technologies />
+  }
+</ui-border-article>

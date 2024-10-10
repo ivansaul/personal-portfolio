@@ -1,0 +1,25 @@
+<ui-border-article>
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  @defer (on idle) {
+  <section class="mapbox">
+    <figure>
+      @if(safeGoogleMapUrl){
+      <iframe
+        [src]="safeGoogleMapUrl"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map showing location of my area."
+      >
+      </iframe>
+      }
+    </figure>
+  </section>
+  <app-contact-form />
+  }
+</ui-border-article>

@@ -1,0 +1,30 @@
+.softskills-title {
+    margin-bottom: 40px;
+}
+
+.softskills-list {
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 580px) {
+    .softskills-title {
+        margin-bottom: 25px;
+    }
+
+    .softskills-list {
+        gap: 30px;
+        margin: 0 -30px;
+        padding: 30px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .softskills-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 25px;
+    }
+}

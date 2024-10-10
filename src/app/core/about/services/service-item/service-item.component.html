@@ -1,0 +1,13 @@
+<ui-content-card class="service-item">
+  <div class="service-icon-box">
+    <ui-image [src]="service().image" alt="design icon" width="40" />
+  </div>
+
+  <div class="service-content-box">
+    <h4 class="h4 service-item-title">{{ service().title }}</h4>
+
+    <p class="service-item-text">
+      {{ service().description }}
+    </p>
+  </div>
+</ui-content-card>

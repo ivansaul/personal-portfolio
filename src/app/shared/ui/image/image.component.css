@@ -1,0 +1,17 @@
+img {
+    width: 100%;
+    margin: auto;
+    transition: transform var(--transition-1), filter var(--transition-3);
+}
+
+.blur {
+    filter: blur(20px);
+}
+
+img.scaled {
+    transform: scale(1.1);
+}
+
+img.loaded {
+    filter: blur(0);
+}

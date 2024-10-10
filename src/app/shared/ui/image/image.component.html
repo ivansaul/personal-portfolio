@@ -1,0 +1,23 @@
+@if (!isImageLoaded) {
+<ui-loader
+  [width]="loaderWidth || width()"
+  [height]="loaderHeight || width()"
+  [padding]="loaderPadding()"
+/>
+}
+
+<img
+  [class]="{
+    scaled: scale(),
+    loaded: isImageLoaded,
+    blur: true
+  }"
+  [style]="{
+    width: width() + 'px',
+    height: height() ? height() + 'px' : 'auto',
+  }"
+  [attr.src]="src()"
+  [alt]="alt()"
+  (load)="onImageLoad()"
+  (error)="onImageError()"
+/>

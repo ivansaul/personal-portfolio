@@ -1,0 +1,13 @@
+<ui-icon-box [icon]="item().icon" />
+
+<div class="contact-info">
+  <p class="contact-title">{{ item().title }}</p>
+
+  @if ( item().type=='address' ) {
+  <address>{{ item().value }}</address>
+  } @else if (item().type=='date') {
+  <time>{{ item().value }}</time>
+  } @else {
+  <a [href]="item().link" class="contact-link">{{ item().value }}</a>
+  }
+</div>

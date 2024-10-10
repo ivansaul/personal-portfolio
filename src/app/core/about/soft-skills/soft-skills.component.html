@@ -1,0 +1,13 @@
+<h3 class="h3 softskills-title">Soft Skills</h3>
+
+@if (!softSkills().length) {
+<ui-loader width="100" />
+}
+
+<ul class="softskills-list">
+  @for (softSkill of softSkills(); track softSkill.title) {
+  <li>
+    <app-soft-skill-item [softSkill]="softSkill" />
+  </li>
+  }
+</ul>

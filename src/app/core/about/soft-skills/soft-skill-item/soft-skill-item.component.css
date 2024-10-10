@@ -1,0 +1,58 @@
+:host {
+    margin-bottom: 25px;
+}
+
+ui-content-card {
+    padding-top: 45px;
+
+}
+
+.softskills-avatar-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(15px, -25px);
+    background: var(--bg-gradient-onyx);
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+}
+
+.softskills-item-title {
+    margin-bottom: 7px;
+}
+
+.softskills-text {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    line-clamp: 4;
+    overflow: hidden;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+}
+
+@media (min-width: 580px) {
+    .softskills-avatar-box {
+        transform: translate(30px, -30px);
+        border-radius: 20px;
+    }
+
+    .softskills-item-title {
+        margin-bottom: 10px;
+        margin-left: 95px;
+    }
+
+    .softskills-text {
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .loader {
+        width: 80px;
+        height: 80px;
+    }
+}

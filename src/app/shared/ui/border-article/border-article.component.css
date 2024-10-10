@@ -1,0 +1,40 @@
+:host {
+    background: var(--eerie-black-2);
+    border: 1px solid var(--jet);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+
+    display: block;
+    animation: fade 0.5s ease backwards;
+}
+
+@media (min-width: 580px) {
+    :host {
+        width: 520px;
+        margin-inline: auto;
+        padding: 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    :host {
+        width: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :host {
+        width: 950px;
+        box-shadow: var(--shadow-5);
+    }
+}
+
+@media (min-width: 1250px) {
+    :host {
+        width: auto;
+        min-height: 100%;
+    }
+}

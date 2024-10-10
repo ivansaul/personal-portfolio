@@ -1,0 +1,35 @@
+:host {
+    min-width: 50%;
+    scroll-snap-align: start;
+}
+
+/* :host img:hover {
+    filter: grayscale(0);
+    } */
+
+.h5 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (min-width: 450px) {
+    :host {
+        min-width: calc(33.33% - 10px);
+    }
+}
+
+@media (min-width: 580px) {
+    :host {
+        min-width: calc(33.33% - 35px);
+    }
+
+    .h5 {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :host {
+        min-width: calc(25% - 38px);
+    }
+}

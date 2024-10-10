@@ -1,0 +1,13 @@
+<h3 class="h3 service-title">What i'm doing</h3>
+
+@if (!services().length) {
+<ui-loader width="100" />
+}
+
+<ul class="service-list">
+  @for (item of services(); track item.title) {
+  <li>
+    <app-service-item [service]="item" />
+  </li>
+  }
+</ul>

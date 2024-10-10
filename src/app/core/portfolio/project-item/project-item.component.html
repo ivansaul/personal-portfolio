@@ -1,0 +1,23 @@
+<a [href]="item().url" target="_blank" class="link">
+  <figure
+    class="project-img"
+    (mouseenter)="makeImageScale = true"
+    (mouseleave)="makeImageScale = false"
+  >
+    <div class="project-item-icon-box">
+      <ion-icon name="eye-outline"></ion-icon>
+    </div>
+
+    <ui-image
+      [src]="item().image"
+      [alt]="item().title"
+      [scale]="makeImageScale"
+      loaderPadding="10"
+      loaderHeight="200"
+    />
+  </figure>
+
+  <h3 class="project-title">{{ item().title }}</h3>
+
+  <p class="project-category">{{ item().category }}</p>
+</a>

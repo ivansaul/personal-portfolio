@@ -1,0 +1,18 @@
+<ui-content-card>
+  <figure class="softskills-avatar-box">
+    <ui-image
+      [width]="imageWidth"
+      loaderPadding="20"
+      [src]="softSkill().image"
+      [alt]="softSkill().image"
+    />
+  </figure>
+
+  <h4 class="h4 softskills-item-title">{{ softSkill().title }}</h4>
+
+  <div class="softskills-text">
+    <p>
+      {{ softSkill().description }}
+    </p>
+  </div>
+</ui-content-card>

@@ -1,0 +1,9 @@
+<ul class="navbar-list">
+  @for (item of tabs; track item.id) {
+  <li class="navbar-item" [routerLink]="[item.id]">
+    <button class="navbar-link" routerLinkActive="active">
+      {{ item.title }}
+    </button>
+  </li>
+  }
+</ul>

@@ -1,0 +1,22 @@
+<ui-border-article>
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <ui-category-filter
+    [categories]="categories"
+    [(selected)]="selectedCategory"
+  />
+
+  <ul class="project-list">
+    @for (item of filteredProjects(); track item.title) {
+    <li>
+      <app-project-item [item]="item" />
+    </li>
+    }
+  </ul>
+
+  @if(!filteredProjects().length) {
+  <ui-loader width="100" />
+  }
+</ui-border-article>

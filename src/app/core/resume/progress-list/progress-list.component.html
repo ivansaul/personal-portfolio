@@ -1,0 +1,13 @@
+<h3 class="h3">{{ title() }}</h3>
+
+@if (!items().length) {
+<ui-loader width="100" />
+}
+
+<ul class="skills-list">
+  <ui-content-card>
+    @for (item of items(); track item.title) {
+    <app-progress-item [item]="item" />
+    }
+  </ui-content-card>
+</ul>

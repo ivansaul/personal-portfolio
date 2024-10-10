@@ -1,0 +1,38 @@
+:host {
+    color: var(--white-2);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+    padding: 13px 20px;
+    border: 1px solid var(--jet);
+    border-radius: 14px;
+    outline: none;
+}
+
+:host::placeholder {
+    font-weight: var(--fw-500);
+}
+
+:host:focus {
+    border-color: var(--orange-yellow-crayola);
+}
+
+textarea:host {
+    min-height: 100px;
+    height: 120px;
+    max-height: 200px;
+    resize: vertical;
+}
+
+textarea:host::-webkit-resizer {
+    display: none;
+}
+
+:host:focus.ng-dirty.ng-invalid {
+    border-color: var(--bittersweet-shimmer);
+}
+
+@media (min-width: 580px) {
+    :host {
+        padding: 15px 20px;
+    }
+}

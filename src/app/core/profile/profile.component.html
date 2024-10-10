@@ -1,0 +1,34 @@
+<div class="sidebar-info">
+  <figure class="avatar-box">
+    <ui-image
+      [src]="profile().avatar"
+      [alt]="profile().name"
+      [width]="imageWidth"
+      loaderPadding="10px"
+    />
+  </figure>
+
+  <div class="info-content">
+    <h1 class="name">{{ profile().name }}</h1>
+
+    @if (profile().title) {
+    <p class="title">{{ profile().title }}</p>
+    }
+  </div>
+
+  <button class="info_more-btn" (click)="toggleProfile()">
+    <span>Show Contacts</span>
+
+    <ion-icon name="chevron-down"></ion-icon>
+  </button>
+</div>
+
+<div class="sidebar-info_more">
+  <div class="separator"></div>
+
+  <app-contacts [contacts]="contacts()" />
+
+  <div class="separator"></div>
+
+  <app-socials [socials]="socials()" />
+</div>
