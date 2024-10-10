@@ -1,9 +1,11 @@
 {
+    "editor.formatOnSave": true,
+    "cSpell.language": "en,es",
     "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
             "source.organizeImports": "explicit",
         },
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "charliermarsh.ruff"
     },
 }
