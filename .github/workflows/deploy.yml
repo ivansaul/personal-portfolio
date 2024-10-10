@@ -44,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v4
       
       - name: Build with Python Jinja
-        run: python main.py
+        run: poetry run python main.py
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
