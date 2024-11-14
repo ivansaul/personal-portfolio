@@ -1,0 +1,45 @@
+HEADER:
+  label: "Blog"
+
+POSTS:
+  - title: "Design conferences in 2022"
+    category: "Design"
+    subtitle: "A look into the top design conferences happening this year, where innovation meets creativity."
+    published: "2022-02-23"
+    image: "config/assets/posts/blog-1.jpg"
+    url: "https://medium.com"
+
+  - title: "Best fonts every designer should know"
+    category: "Design"
+    subtitle: "Explore the best fonts that every designer should incorporate into their toolkit for standout projects."
+    published: "2022-02-23"
+    image: "config/assets/posts/blog-2.jpg"
+    url: "https://dev.to"
+
+  - title: "Design digest #80"
+    category: "Design"
+    subtitle: "Stay updated with the latest design trends, tips, and tools that are shaping the industry."
+    published: "2022-02-23"
+    image: "config/assets/posts/blog-3.jpg"
+    url: "https://hashnode.com"
+
+  - title: "UI interactions of the week"
+    category: "Design"
+    subtitle: "Discover the most engaging UI interactions of the week that are driving user experiences forward."
+    published: "2022-02-23"
+    image: "config/assets/posts/blog-4.jpg"
+    url: "https://dev.to"
+
+  - title: "The Forgotten Art Of Spacing"
+    category: "Design"
+    subtitle: "Learn about the importance of spacing in design and how it can elevate the visual hierarchy of your work."
+    published: "2022-02-23"
+    image: "config/assets/posts/blog-5.jpg"
+    url: "https://medium.com"
+
+  - title: "Design Digest #79"
+    category: "Design"
+    subtitle: "This edition covers the latest insights into design practices and tools you need to know."
+    published: "2022-02-23"
+    image: "config/assets/posts/blog-6.jpg"
+    url: "https://hashnode.com"

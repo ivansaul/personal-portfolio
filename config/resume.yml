@@ -1,0 +1,59 @@
+HEADER:
+  label: "Resume"
+
+EDUCATION:
+  enabled: true
+  label: "Education"
+  items:
+    - period: "2002 — 2004"
+      institution: "High School of Art and Design"
+      description: "Graduated with honors, focusing on visual arts and design principles. Participated in multiple student exhibitions, honing skills in drawing, painting, and graphic design."
+    - period: "2005 — 2007"
+      institution: "Brooklyn Technical High School"
+      description: "Completed coursework in computer science and digital media, with a particular focus on web development and programming. Collaborated on projects involving coding and design integration."
+    - period: "2006 — 2007"
+      institution: "New York Academy of Art"
+      description: "Studied fine arts with a focus on sculpture and advanced painting techniques. Took part in workshops and intensive studio sessions, receiving feedback from industry professionals."
+    - period: "2007 — 2008"
+      institution: "University School of the Arts"
+      description: "Pursued a Bachelor of Fine Arts degree, specializing in interactive media and digital design. Graduated with a portfolio of projects blending traditional art forms with emerging technologies."
+
+EXPERIENCE:
+  enabled: true
+  label: "Experience"
+  items:
+    - period: "2010 — 2013"
+      position: "Web Designer"
+      description: "Worked on the design and development of websites for small to medium-sized businesses. Collaborated closely with developers to ensure responsive and user-friendly designs. Led the redesign of the company’s website, improving user engagement by 25%."
+    - period: "2013 — 2015"
+      position: "Art Director"
+      description: "Led a team of designers to create visually stunning campaigns for major clients in the advertising industry. Managed the creative direction of print and digital media, ensuring consistent branding and high-quality designs. Oversaw the production of advertisements that won industry awards."
+    - period: "2015 — Present"
+      position: "Creative Director"
+      description: "Direct and oversee the creative process for a range of projects, from concept to execution. Lead cross-functional teams to create innovative design solutions for branding, marketing, and digital experiences. Recently led the redesign of a global brand’s digital presence, increasing online sales by 40%."
+
+LANGUAGES:
+  enabled: true
+  display_progress_bars: true
+  display_percentage_values: true
+  label: "Languages"
+  items:
+    - language: "Inglés"
+      proficiency: "60%"
+    - language: "Francés"
+      proficiency: "40%"
+
+SKILLS:
+  enabled: true
+  display_progress_bars: true
+  display_percentage_values: true
+  label: "My Skills"
+  items:
+    - skill: "Web Design"
+      proficiency: "80%"
+    - skill: "Graphic Design"
+      proficiency: "70%"
+    - skill: "Branding"
+      proficiency: "90%"
+    - skill: "WordPress"
+      proficiency: "50%"

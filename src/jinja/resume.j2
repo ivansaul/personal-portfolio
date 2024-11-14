@@ -1,0 +1,101 @@
+<!-- resume.j2 -->
+<article class="resume" data-page="resume">
+  <header>
+    <h2 class="h2 article-title">{{resume.HEADER.label}}</h2>
+  </header>
+
+  <!-- EDUCATION -->
+  {% if resume.EDUCATION.enabled %}
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">{{resume.EDUCATION.label}}</h3>
+    </div>
+    <ol class="timeline-list">
+      {% for item in resume.EDUCATION["items"] | reverse %}
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">{{item.institution}}</h4>
+        <span>{{item.period}}</span>
+        <p class="timeline-text">
+          {{item.description}}
+        </p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  <!-- EXPERIENCE -->
+  {% if resume.EXPERIENCE.enabled %}
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">{{resume.EXPERIENCE.label}}</h3>
+    </div>
+    <ol class="timeline-list">
+      {% for item in resume.EXPERIENCE["items"] | reverse %}
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">{{item.position}}</h4>
+        <span>{{item.period}}</span>
+        <p class="timeline-text">
+          {{item.description}}
+        </p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  <!-- LANGUAGES -->
+  {% if resume.LANGUAGES.enabled %}
+  <section class="skill">
+    <h3 class="h3 skills-title">{{resume.LANGUAGES.label}}</h3>
+    <ul class="skills-list content-card">
+      {% for item in resume.LANGUAGES["items"] %}
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">{{item.language}}</h5>
+          {% if resume.LANGUAGES.display_percentage_values %}
+          <data value="{{item.proficiency[:-1]}}">{{item.proficiency}}</data>
+          {% endif %}
+        </div>
+        {% if resume.LANGUAGES.display_progress_bars %}
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: {{item.proficiency}};"></div>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <br>
+  {% endif %}
+
+  <!-- SKILLS -->
+  {% if resume.SKILLS.enabled %}
+  <section class="skill">
+    <h3 class="h3 skills-title">{{resume.SKILLS.label}}</h3>
+    <ul class="skills-list content-card">
+      {% for item in resume.SKILLS["items"] %}
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">{{item.skill}}</h5>
+          {% if resume.SKILLS.display_percentage_values %}
+          <data value="{{item.proficiency[:-1]}}">{{item.proficiency}}</data>
+          {% endif %}
+        </div>
+        {% if resume.SKILLS.display_progress_bars %}
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: {{item.proficiency}};"></div>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>

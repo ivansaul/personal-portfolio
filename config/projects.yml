@@ -1,0 +1,73 @@
+HEADER:
+  label: "Portfolio"
+
+PROJECTS:
+  - title: "Flutter Cinemapedia App"
+    category: "Mobile development"
+    image: "https://i.imgur.com/ANDVQ4o.png"
+    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
+
+  - title: "Flutter Coffee Shop App"
+    category: "Mobile development"
+    image: "https://imgur.com/2nNXhDN.png"
+    url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
+
+  - title: "Flutter Todo App"
+    category: "Mobile development"
+    image: "https://imgur.com/7110Lj1.png"
+    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
+
+  - title: "Flutter Travel News App"
+    category: "Mobile development"
+    image: "https://imgur.com/t5T5Ixa.png"
+    url: "https://github.com/ivansaul/flutter_travel_news_app#screenshots"
+
+  - title: "Codigo Facilito Downloader"
+    category: "Python Scripting"
+    image: "https://imgur.com/kyHrBGk.png"
+    url: "https://github.com/ivansaul/codigo_facilito_downloader"
+
+  - title: "Finance"
+    category: "Web development"
+    image: "config/assets/projects/project-1.jpg"
+    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
+
+  - title: "Orizon"
+    category: "Web development"
+    image: "config/assets/projects/project-2.png"
+    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
+
+  - title: "Fundo"
+    category: "Web design"
+    image: "config/assets/projects/project-3.jpg"
+    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
+
+  - title: "Brawlhalla"
+    category: "Applications"
+    image: "config/assets/projects/project-4.png"
+    url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
+
+  - title: "DSM."
+    category: "Web design"
+    image: "config/assets/projects/project-5.png"
+    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
+
+  - title: "MetaSpark"
+    category: "Web design"
+    image: "config/assets/projects/project-6.png"
+    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
+
+  - title: "Summary"
+    category: "Web development"
+    image: "config/assets/projects/project-7.png"
+    url: "https://github.com/ivansaul/codigo_facilito_downloader"
+
+  - title: "Task Manager"
+    category: "Applications"
+    image: "config/assets/projects/project-8.jpg"
+    url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
+
+  - title: "Arrival"
+    category: "Web development"
+    image: "config/assets/projects/project-9.png"
+    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"

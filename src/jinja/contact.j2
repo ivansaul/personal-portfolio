@@ -1,0 +1,27 @@
+<!-- contact.j2 -->
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">{{contact.HEADER.label}}</h2>
+  </header>
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src="{{contact.LOCATION.embed}}"
+        width="400" height="300" loading="lazy"></iframe>
+    </figure>
+  </section>
+  <section class="contact-form">
+    <h3 class="h3 form-title">{{contact.FORM.label}}</h3>
+    <form action="mailto:{{profile.USER.email}}" method="POST" class="form" data-form>
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="{{contact.FORM.fields[0].name}}" required data-form-input>
+        <input type="email" name="email" class="form-input" placeholder="{{contact.FORM.fields[1].email}}" required data-form-input>
+      </div>
+      <textarea name="message" class="form-input" placeholder="{{contact.FORM.fields[2].message}}" required data-form-input></textarea>
+      <button class="form-btn" type="submit" disabled data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>{{contact.FORM.fields[3].submit}}</span>
+      </button>
+    </form>
+  </section>
+</article>

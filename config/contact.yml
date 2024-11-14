@@ -1,0 +1,13 @@
+HEADER:
+  label: "Contact"
+
+LOCATION:
+  embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.711865180165!2d-73.98565448469727!3d40.74843130577657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1f0be18197%3A0x4a84c06d9c4c3e9b!2sRichard+Hendricks+House%2C+100+East+18th+Street%2C+New+York%2C+NY+10013!5e0!3m2!1sen!2sus!4v1649492302859!5m2!1sen!2sus"
+
+FORM:
+  label: "Contact Form"
+  fields:
+    - name: "Full name"
+    - email: "Email address"
+    - message: "Your message"
+    - submit: "Send message"

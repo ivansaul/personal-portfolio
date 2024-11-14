@@ -1,48 +1,30 @@
-<!-- blog.jinja -->
+<!-- blog.j2 -->
 <article class="blog" data-page="blog">
-
   <header>
-    <h2 class="h2 article-title">Blog</h2>
+    <h2 class="h2 article-title">{{blog.HEADER.label}}</h2>
   </header>
-
   <section class="blog-posts">
-
     <ul class="blog-posts-list">
-
-      {% for post in blog.post %}
-
+      {% for post in blog.POSTS %}
       <li class="blog-post-item">
         <a href="{{post.url}}" target="_blank">
-
           <figure class="blog-banner-box">
             <img src="{{post.image}}" alt="{{post.title}}" loading="lazy">
           </figure>
-
           <div class="blog-content">
-
             <div class="blog-meta">
               <p class="blog-category">{{post.category}}</p>
-
               <span class="dot"></span>
-
-              <time datetime="{{post.datetime}}">{{post.datetime | format_date}}</time>
+              <time datetime="{{post.published}}">{{post.published | format_date}}</time>
             </div>
-
             <h3 class="h3 blog-item-title">{{post.title}}</h3>
-
             <p class="blog-text">
               {{post.subtitle}}
             </p>
-
           </div>
-
         </a>
       </li>
-
       {% endfor %}
-
     </ul>
-
   </section>
-
 </article>

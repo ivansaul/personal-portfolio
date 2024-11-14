@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--- META --->
+  {% include 'meta.j2' %}
+  <!--- FAVICON -->
+  <link rel="shortcut icon" href="./src/images/logo.ico" type="image/x-icon">
+  <!--- CSS --->
+  <link rel="stylesheet" href="./src/css/style.css">
+  <!--- GOOGLE FONT --->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <!--- SIDEBAR-->
+    {% include 'sidebar.j2' %}
+    <div class="main-content">
+      <!-- NAVBAR -->
+      {% include 'navbar.j2' %}
+      <!--- ABOUT -->
+      {% include 'about.j2' %}
+      <!-- RESUME --> 
+      {% include 'resume.j2' %}
+      <!-- PROJECTS -->
+      {% include 'projects.j2' %}
+      <!-- BLOG -->
+      {% include 'blog.j2' %}
+      <!-- CONTACT -->
+      {% include 'contact.j2' %}
+    </div>
+  </main>
+  <!--- JS --->
+  <script src="./src/js/script.js"></script>
+  <!--- IONICONS --->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
