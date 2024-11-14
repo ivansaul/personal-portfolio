@@ -1,0 +1,42 @@
+<!-- sidebar.j2 -->
+<aside class="sidebar" data-sidebar>
+  <div class="sidebar-info">
+    <figure class="avatar-box">
+      <img src="{{profile.USER.avatar}}" alt="{{profile.USER.name}}" width="80">
+    </figure>
+    <div class="info-content">
+      <h1 class="name" title="{{profile.USER.name}}">{{profile.USER.name}}</h1>
+      <p class="title">{{profile.USER.role}}</p>
+    </div>
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>{{profile.HEADER.label}}</span>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+  </div>
+  <div class="sidebar-info_more">
+    <div class="separator"></div>
+    <ul class="contacts-list">
+      {% for info in profile.INFO %}
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="{{info.icon}}"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">{{info.label}}</p>
+          <a href="#" class="contact-link">{{info.value}}</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="separator"></div>
+    <ul class="social-list">
+      {% for social in profile.SOCIAL %}
+      <li class="social-item">
+        <a href="{{social.url}}" class="social-link" , target="_blank">
+          <ion-icon name="{{social.icon}}"></ion-icon>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</aside>

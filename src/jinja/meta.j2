@@ -1,0 +1,23 @@
+<!-- meta.j2 -->
+<title>{{profile.USER.name}} | Portfolio</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{about.PRESENTATION.description}}">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://{{profile.USER.username}}.github.io">
+<meta property="og:title" content="{{profile.USER.name}} | {{profile.USER.role}} | Portfolio">
+<meta property="og:description" content="{{about.PRESENTATION.description}}">
+<meta property="og:image" content="{{profile.USER.avatar}}">
+<meta property="og:image:secure_url" content="{{profile.USER.avatar}}">
+<meta property="og:site_name" content="{{profile.USER.name}} | {{profile.USER.role}} | Portfolio">
+<meta name="twitter:card" content="photo">
+<meta name="twitter:creator" content="@{{profile.USER.username}}">
+<meta name="twitter:title" content="{{profile.USER.name}} | {{profile.USER.role}} | Portfolio">
+<meta name="twitter:description" content="{{about.PRESENTATION.description}}">
+<meta name="twitter:image" content="{{profile.USER.avatar}}">
+<meta name="twitter:image:width" content="200">
+<meta name="twitter:image:height" content="200">
+<meta name="keywords" content="{{profile.USER.name}}, {{about.TECHNOLOGIES["items"] | map(attribute='title') | join(', ')}}" />
+<link href="https://{{profile.USER.username}}.github.io" rel="canonical">

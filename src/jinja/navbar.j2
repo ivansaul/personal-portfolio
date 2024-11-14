@@ -1,0 +1,13 @@
+<!-- navbar.j2 -->
+<nav class="navbar">
+  <ul class="navbar-list">
+    <li class="navbar-item">
+      <button class="navbar-link  active" data-nav-link>{{ navbar.NAVBAR[0].label }}</button>
+    </li>
+    {% for item in navbar.NAVBAR[1:] %}
+    <li class="navbar-item">
+      <button class="navbar-link" data-nav-link>{{ item.label }}</button>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
