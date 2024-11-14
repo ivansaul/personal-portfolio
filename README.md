@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 MD036 MD041 MD045 MD046 -->
 <div align="center">
 
 <h1 style="border-bottom: none">
@@ -8,7 +9,7 @@
 responsive for all devices, built using **`HTML`**, **`CSS`**, **`JavaScript`**, and **`Python`**.
 
 ![Made-with-python](https://img.shields.io/badge/Made%20with-Python-orange)
-[![Jinja](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml/badge.svg)](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml)
+[![Deploy](https://github.com/ivansaul/personal-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/ivansaul/personal-portfolio/actions/workflows/deploy.yml)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ivansaul/personal-portfolio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -62,34 +63,39 @@ config
 |   |-- icons
 |   |-- posts
 |   |-- projects
-|-- about.toml
-|-- blog.toml
-|-- softskills.toml
-|-- doing.toml
-|-- projects.toml
-|-- resume.toml
-|-- social.toml
-|-- technologies.toml
+├── blog.yml
+├── contact.yml
+├── navbar.yml
+├── profile.yml
+├── projects.yml
+└── resume.yml
 ```
 
-For example, to set your contact information, edit `config/about.toml`.
+For example, to set your contact information, edit `config/profile.yml`.
 
-```toml
-name = "Richard hanrick"
-rol = "Flutter Developer"
-email = "richard@example.com"
-phone = "+1 (213) 352-2795"
-birthday = "June 26, 1996"
-location = "Sacramento, California, USA"
-avatar = "./path/to/my-avatar.png"
+```yml
+INFO:
+  - label: "Email"
+    value: "richard@example.com"
+  - label: "Phone"
+    value: "+1 (213) 352-2795"
+  - label: "Birthday"
+    value: "June 26, 1996"
+  - label: "Location"
+    value: "Sacramento, California, USA"
 ```
+
+> [!IMPORTANT]
+> Indentation Matters: YAML is sensitive to indentation. Ensure that each level of nesting is indented with consistent spaces (not tabs) to avoid errors when loading or parsing the data.
+
+<br/>
 
 > [!TIP]
 > You can upload your images directly to the `config/assets` folder or use an image server like [Imgur][imgur]. Both options are valid for customizing your portfolio. For example:
 >
 > `avatar = "https://i.imgur.com/H5gx7JF.png"`
 >
-> `avatar = "./config/assets/avatars/my-avatar.png"`
+> `avatar = "config/assets/avatars/my-avatar.png"`
 
 ### Step 5: Enjoy 😉
 
